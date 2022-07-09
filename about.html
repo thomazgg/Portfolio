@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <!-- ======= TITLE =======-->
+    <title>Thomaz ⇀ About me</title>
+    <!-- ===== BOX ICONS ===== -->
+    <link href='/assets/css/boxicons.css' rel='stylesheet'>
+    <!-- ======= ICONS ======= -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <link rel="shortcut icon" href="assets/img/sprites/control.png">
+    <!-- ======== CSS ======== -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main2.css">
+    <link rel="stylesheet" href="./assets/css/main3.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="loader loader_overlay -visible"></div>
+    <!-- ======== MENU ======== -->
+    <nav class="menu">
+        <div class="menu-toggle">
+            <button class="btn btn_menu" aria-label="menu" data-cursor="-menu" data-cursor-stick=".btn_menu-box">
+            <span class="btn_menu-title" style="visibility:hidden;">menu</span>
+            <span class="btn_menu-box" data-magnetic="{&quot;x&quot;:&quot;0.08&quot;,&quot;y&quot;:&quot;0.08&quot;}">
+                <span></span>
+                <span></span>
+            </span>
+            </button>
+        </div>
+        <div class="menu-box">
+            <div class="menu-backdrop"></div>
+            <div class="menu-content">
+                <div class="menu-body">
+                    <div class="menu-container">
+                        <div class="menu-grid">
+                            <div class="menu-grid-col -left">
+                                <div class="menu-title">Social</div>
+                                <div class="menu-social" data-cursor="-opaque">
+                                    <a class="menu-social-item" href="https://github.com/thomazgg" target="_blank" rel="noopener" data-magnetic><em><span data-text="GitHub">GitHub</span></em></a>
+                                    <a class="menu-social-item" href="https://www.behance.net/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Behance">Behance</span></em></a>
+                                    <a class="menu-social-item" href="https://dribbble.com/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Dribbble">Dribbble</span></em></a>
+                                    <a class="menu-social-item" href="https://instagram.com/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Instagram">Instagram</span></em></a>
+                                    <a class="menu-social-item" href="https://discord.gg/DJuK4KGa94" target="_blank" rel="noopener" data-magnetic><em><span data-text="Discord">Discord</span></em></a>
+                                    <a class="menu-social-item" href="https://twitch.tv/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Twitch">Twitch</span></em></a>
+                                    <a class="menu-social-item" href="https://twitter.com/thomazvfx" target="_blank" rel="noopener" data-magnetic><em><span data-text="Twitter">Twitter</span></em></a>
+                                    <a class="menu-social-item" href="https://youtube.com/c/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="YouTube">YouTube</span></em></a>
+                                </div>
+                            </div>
+                            <div class="menu-grid-col -right">
+                                <div class="menu-title">Menu</div>
+                                <div class="menu-nav" role="navigation" data-cursor="-opaque">
+                                    <div class="menu-nav-item"><a href="/index.html" data-magnetic><em><span data-text="Home">Home</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="/about.html" data-magnetic><em><span data-text="About">About</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="/projects.html" data-magnetic><em><span data-text="Projects">Projects</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="/contact.html" data-magnetic><em><span data-text="Contact">Contact</span></em></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-footer">
+                    <div class="menu-container">
+                        <div class="menu-title -sm">Get in Touch</div>
+                        <div class="menu-mail"><a href="mailto:uthomaz7@gmail.com"><span>uthomaz7@gmail.com</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="view" data-controller="homeController" id="view-main"><canvas class="scene"></canvas>
+        <div class="layout" role="main">
+            <div class="navbar">
+                <div class="navbar-strip">
+                    <div class="navbar-grid">
+                        <div class="navbar-grid-col -left">
+                            <div class="navbar-logo">
+                                <a href="/">
+                                    <svg class="svgsprite -logo" width="35" height="35" viewbox="0 0 512 512">
+                                    <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+                                    fill="#000000" stroke="none">
+                                    <path d="M1460 1595 l0 -465 154 0 155 0 3 193 c3 181 4 194 26 224 35 50 103
+                                    77 192 78 87 0 131 -20 167 -75 22 -31 23 -42 23 -226 l0 -194 155 0 155 0 0
+                                    242 c0 275 -5 296 -83 363 -70 60 -134 79 -272 79 -143 1 -216 -17 -306 -75
+                                    l-59 -39 0 180 0 180 -155 0 -155 0 0 -465z"/>
+                                    <path d="M880 1905 l0 -95 -70 0 -70 0 0 -95 0 -95 70 0 70 0 0 -178 c0 -165
+                                    2 -181 23 -222 38 -75 64 -84 260 -88 l167 -4 0 96 0 96 -59 0 c-88 0 -91 5
+                                    -91 166 l0 134 75 0 76 0 -3 93 -3 92 -72 3 -73 3 0 94 0 95 -150 0 -150 0 0
+                                    -95z"/>
+                                    <path d="M5630 1763 l0 -81 1098 -6 c603 -3 1113 -10 1132 -14 38 -8 52 -39
+                                    28 -59 -9 -8 -341 -16 -1013 -27 -1071 -17 -1091 -18 -1166 -69 -54 -37 -73
+                                    -71 -77 -140 -8 -131 73 -214 231 -236 68 -10 1559 5 1799 17 141 8 148 9 197
+                                    40 l52 32 9 -24 c18 -49 43 -56 193 -56 l138 0 -3 93 -3 92 -32 3 -31 3 -4
+                                    177 c-3 201 -12 228 -86 270 -91 51 -85 50 -1314 58 l-1148 7 0 -80z m2270
+                                    -333 c0 -20 -11 -42 -33 -66 -32 -36 -36 -37 -129 -45 -137 -11 -872 -28
+                                    -1365 -31 l-421 -3 -26 24 c-34 32 -33 66 1 88 21 14 53 19 148 21 161 5 1627
+                                    39 1738 41 l87 1 0 -30z"/>
+                                    <path d="M2931 1820 c-157 -33 -247 -90 -299 -190 -33 -63 -34 -68 -30 -160 3
+                                    -73 9 -105 27 -138 47 -91 140 -154 278 -189 98 -25 448 -25 547 0 91 23 179
+                                    71 221 120 60 70 85 184 65 291 -23 124 -94 196 -239 244 -71 24 -91 26 -301
+                                    28 -124 2 -245 -1 -269 -6z m376 -185 c35 -11 62 -27 87 -55 33 -37 36 -45 36
+                                    -101 0 -59 -2 -63 -43 -104 -55 -56 -102 -68 -237 -63 -89 3 -112 7 -150 28
+                                    -113 63 -119 210 -11 274 18 10 47 22 64 26 57 14 201 11 254 -5z"/>
+                                    <path d="M4405 1816 c-5 -3 -35 -11 -65 -20 -31 -8 -84 -33 -117 -55 l-62 -40
+                                    -3 52 -3 52 -150 0 -150 0 0 -335 0 -335 153 -3 152 -3 0 178 c0 207 10 243
+                                    79 288 80 54 224 41 268 -23 15 -23 19 -55 23 -232 l5 -205 152 -3 151 -3 4
+                                    188 c3 178 4 190 27 227 36 57 113 90 196 84 65 -6 107 -26 128 -62 8 -14 14
+                                    -93 17 -226 l5 -205 155 0 155 0 0 240 -1 240 -26 51 c-55 104 -158 154 -317
+                                    154 -134 0 -265 -41 -350 -108 l-24 -19 -29 33 c-16 18 -54 45 -85 61 -49 23
+                                    -70 27 -167 30 -61 1 -115 1 -121 -1z"/>
+                                    <path d="M8340 1710 l0 -90 243 -2 242 -3 -242 -160 -243 -160 0 -82 0 -83
+                                    460 0 460 0 0 95 0 95 -251 2 -252 3 252 159 251 159 0 78 0 79 -460 0 -460 0
+                                    0 -90z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-grid-col -right" data-cursor="-opaque">
+                            <div class="navbar-home"><a class="btn btn_nav" href="./index.html" data-magnetic><span>home</span></a></div>
+                            <div class="navbar-about"><a class="btn btn_nav" href="./about.html" data-magnetic><span>about</span></a></div>
+                            <div class="navbar-projects"><a class="btn btn_nav" href="./projects.html" data-magnetic><span>projects</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======== HEADER ======== -->
+            <header class="hero">
+
+                <div class="hero-content">
+                    <div class="hero-container">
+
+                        <div class="hero-grid">
+                            <div class="hero-grid-col -left">
+                                <div class="hero-video"><video preload="auto" loop muted autoplay playsinline><source src="./assets/video/showreel/pistola_rosa.mp4" type="video/mp4"></video></div>
+                            </div>
+                            <div class="hero-grid-col -right">
+                                <div class="hero-nav">
+                                    <div class="hero-nav-item" data-video-src="./assets/video/video.mp4">
+                                        <div class="hero-nav-item-spacer"></div><a href="./projects.html"><span class="-wd">web designer</span></a></div>
+                                    <div class="hero-nav-item" data-video-src="./assets/video/video0.mov">
+                                        <div class="hero-nav-item-spacer"></div><a href="https://www.tiktok.com/@uthomaz" target="_blank"><span class="-lg">& content creator /</span><span class="-sm">content creator</span></a></div>
+                                    <div class="hero-nav-item" data-video-src="./assets/video/dreams.mp4">
+                                        <div class="hero-nav-item-spacer"></div><a href="https://www.youtube.com/c/uthomaz" target="_blank"><span class="-ve">video editor</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                     
+                        <div class="hero-footer">
+                            <div class="hero-container">
+                                <div class="hero-text" data-cursor="-opaque">
+                                    <a>scroll down ↴</a>
+                                </div>
+                            </div>
+                        </div>
+                         -->
+                    </div>
+
+                </div>
+                <div class="arrow" class="preview" data-cursor-text="Scroll 👇">
+                    <span></span>
+                </div>
+            </header>
+            <section class="screenshot">
+                <div class="screenshot-preview -lg"><img src="./assets/img/about_me.jpg" alt></div>
+            </section>
+            <section class="brief">
+                <div class="brief-content">
+                    <div class="brief-container">
+                        <div class="brief-grid">
+                            <div class="brief-grid-col -left">
+                                <div class="brief-header">
+                                    <h2>Who I am</h2>
+                                    <h3>Quem eu sou</h3>
+                                </div>
+                            </div>
+                            <div class="brief-grid-col -right">
+                                <div class="brief-text">
+                                    <p>Oi <img src='/assets/img/emoji/mao.png'>! costumo me apresentar como Thomaz. Nasci no Brasil e estou no 3º ano da Faculdade de Ciência da Computação. Comecei a editar no início da pandemia usando o after effects como
+                                        hobby, também aprendi a usar photoshop, com vídeos no youtube até cursos que fiz <img src='/assets/img/emoji/hehe.png'>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="employment" data-cursor="-color-video-editing">
+                <div class="employment-content -ct">
+                    <div class="employment-container">
+                        <div class="employment-top">
+                            <div class="employment-header">
+                                <h2>Experiências com<br> Edição de vídeo</h2>
+                            </div>
+                        </div>
+                        <div class="employment-bottom">
+                            <div class="employment-grid">
+                                <div class="employment-grid-col -left">
+                                    <a class="employment-preview" data-cursor-text="Veja mais" href="./services.html"><img src="assets/img/about.jpg" loading="lazy" alt></a>
+                                </div>
+                                <div class="employment-grid-col -right">
+                                    <div class="employment-title">After Effects, Premiere & Blender</div>
+                                    <div class="employment-text">
+                                        <p>Minha experiência com edição de vídeo foi muito boa, pois aprendi muito no período de um ano vendo muitos vídeos e fazendo acontecer.</p>
+                                    </div>
+                                    <div class="employment-action"><a class="btn btn_more" href="./services.html" data-magnetic><span class="btn_more-title"><span data-text="Veja mais">Veja mais</span></span><span class="btn_more-ripple"><span></span></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="employment -reverse" data-cursor="-color-content-creation">
+                <div class="employment-content -ct">
+                    <div class="employment-container">
+                        <div class="employment-top">
+                            <div class="employment-header">
+                                <h2>Experiências<br>com Criação de conteúdo</h2>
+                            </div>
+                        </div>
+                        <div class="employment-bottom">
+                            <div class="employment-grid">
+                                <div class="employment-grid-col -left">
+                                    <a class="employment-preview" data-cursor-text="Veja mais" href="./services.html"><img src="assets/img/photoshop.jpg" loading="lazy" alt></a>
+                                </div>
+                                <div class="employment-grid-col -right">
+                                    <div class="employment-title">Photoshop & Adobe Illustrator</div>
+                                    <div class="employment-text">
+                                        <p>Também aprendi a usar o photoshop ao mesmo tempo, pois precisava fazer thumbnails, headers, banners, várias coisas que eu precisava, inclusive edição de vídeo, então basicamente aprendi muito assistindo vídeos e
+                                            até fiz um curso que me ajudou muito.</p>
+                                    </div>
+                                    <div class="employment-action"><a class="btn btn_more" href="./services.html" data-magnetic><span class="btn_more-title"><span data-text="Veja mais">Veja mais</span></span><span class="btn_more-ripple"><span></span></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="employment" data-cursor="-color-coding">
+                <div class="employment-content -ct">
+                    <div class="employment-container">
+                        <div class="employment-top">
+                            <div class="employment-header">
+                                <h2>Experiências com<br>Progamação</h2>
+                            </div>
+                        </div>
+                        <div class="employment-bottom">
+                            <div class="employment-grid">
+                                <div class="employment-grid-col -left">
+                                    <a class="employment-preview" data-cursor-text="Veja mais" href="./services.html"><img src="assets/img/quarentine.jpg" loading="lazy" alt></a>
+                                </div>
+                                <div class="employment-grid-col -right">
+                                    <div class="employment-title">Visual Studio Code, Adobe XD & Figma</div>
+                                    <div class="employment-text">
+                                        <p>Então me apaixonei por codificação, depois de um tempo passando um tempo em casa com a quarentena foi quando percebi que me apaixonei por programação mais especificamente com Web Design</p>
+                                    </div>
+                                    <div class="employment-action"><a class="btn btn_more" href="./services.html" data-magnetic><span class="btn_more-title"><span data-text="Veja mais">Veja mais</span></span><span class="btn_more-ripple"><span></span></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="description" style="margin-top: -300px">
+                <div class=" description-content -rb ">
+                    <div class="description-container ">
+                        <div class="description-header ">
+                            <h2>Entre no meu servidor<br>↼ Thomaz's Cord</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="screenshot" data-cursor="-color-discord">
+                <div class="screenshot-content -cp ">
+                    <div class="screenshot-container ">
+                        <a class="screenshot-preview" href="https://discord.com/invite/DJuK4KGa94" target="_blank" rel="noopener" data-cursor-text="Juntar-se"><img src="./assets/img/discord.jpg" loading="lazy " alt></a>
+                    </div>
+                </div>
+            </section>
+            <section class="numstat" data-cursor="-color-discord">
+                <div class="numstat-content -cb ">
+                    <div class="numstat-container ">
+                        <div class="numstat-grid ">
+                            <div class="numstat-grid-col ">
+                                <div class="numstat-num ">
+                                    <div class="numstat-num-digit " style="transform:translateY(-20%) "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-digit "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-digit "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-digit "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-char ">+</div>
+                                </div>
+                                <div class="numstat-title ">membros</div>
+                            </div>
+                            <div class="numstat-grid-col ">
+                                <div class="numstat-num ">
+                                    <div class="numstat-num-digit " style="transform:translateY(-10%) "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-digit "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-char ">+</div>
+                                </div>
+                                <div class="numstat-title ">embeds</div>
+                            </div>
+                            <div class="numstat-grid-col ">
+                                <div class="numstat-num ">
+                                    <div class="numstat-num-digit " style="transform:translateY(-20%) "><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+                                    <div class="numstat-num-char ">&nbsp;anos&nbsp;</div>
+                                </div>
+                                <div class="numstat-title ">de experiência</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="description" data-cursor="-color-discord">
+                <div class="description-content -rb ">
+                    <div class="description-container ">
+                        <div class="description-header ">
+                            <h2>Explore um servidor incrível que leva as possibilidades do Discord ao limite</h2>
+                        </div>
+                        <div class="description-text ">
+                            <p>Criei meu servidor em 1º de outubro de 2020, hoje ele tem mais de 2k membros <img src='/assets/img/emoji/eita.png'>. Tem muitos emojis, wallpapers e muitas outras decorações.<br /><br /> Você pode se juntar a fazer novos amigos
+                                <img src='/assets/img/emoji/hehe.png'> ou aproveite as decorações que temos e inspire-se para criar o seu próprio servidor</p>
+                            <div class="employment-action">
+                                <a class="btn btn_more" href="./contact.html" data-magnetic>
+                                    <span class="btn_more-title"><span data-text="Juntar-se">Juntar-se</span></span>
+                                    <span class="btn_more-ripple"><span></span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section class="billboard ">
+                <div class="billboard-content -cb ">
+                    <div class="billboard-container ">
+                        <div class="billboard-header ">
+                            <h2>Working with people<br> from all over the world</h2>
+                        </div>
+                        <div class="billboard-items ">
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                            <div class="billboard-item ">
+                                <div class="billboard-img "><#" loading="lazy" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+            <section class="feedback ">
+                <div class="feedback-content ">
+                    <div class="feedback-container ">
+                        <div class="feedback-grid ">
+                            <div class="feedback-grid-col -left ">
+                                <div class="feedback-header ">
+                                    <h2>Feedback de nossos clientes</h2>
+                                </div>
+                            </div>
+                            <div class="feedback-grid-col -right ">
+                                <div class="feedback-items ">
+                                    <div class="feedback-item " data-project="cisco ">
+                                        <blockquote class="feedback-quote " cite="#">
+                                            <div class="feedback-author ">
+                                                <div class="feedback-author-line "></div>
+                                                <div class="feedback-author-name "><b>Nome</b></div>
+                                            </div>
+                                            <div class="feedback-text ">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book. It has survived not only five centuries...</p>
+                                            </div>
+                                            <div class="feedback-more "><a class="btn btn_seemore " href="#" target="_blank "><span data-text="Veja o feedback completo">Veja o feedback completo</span></a></div>
+                                        </blockquote>
+                                    </div>
+                                    <br />
+                                    <div class="feedback-item " data-project="genesis ">
+                                        <blockquote class="feedback-quote " cite="#">
+                                            <div class="feedback-author ">
+                                                <div class="feedback-author-line "></div>
+                                                <div class="feedback-author-name "><b>Nome</b></div>
+                                            </div>
+                                            <div class="feedback-text ">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book. It has survived not only five centuries...</p>
+                                            </div>
+                                            <div class="feedback-more "><a class="btn btn_seemore " href="#" target="_blank "><span data-text="Veja o feedback completo">Veja o feedback completo</span></a></div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="smfeed" style="margin-bottom: 300px">
+                <div class="smfeed-content -st -rb">
+                    <div class="smfeed-container">
+                        <div class="smfeed-header">
+                            <h2>Featured –<br>projects</h2>
+                        </div>
+                        <div class="smfeed-carousel" data-cursor-text="Drag">
+                            <div class="smfeed-items">
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17195869-Finance-Dark-theme-Design" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">Finance Dark theme Design</span>
+                                </a>
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17158885-Iphone-Alarm-UI-Design" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">Iphone Alarm UI Design</span>
+                                </a>
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17109073-PleaseAssistMe-App-Redesign" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">PleaseAssistMe App Redesign</span>
+                                </a>
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17078100-Music-and-video-app" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">Music and video app</span>
+                                </a>
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17062586-iRobot-home-app-design" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">iRobot home app design</span>
+                                </a>
+                                <a class="smfeed-item -dribbble" href="https://dribbble.com/shots/17054626-Making-switch-with-SVG-Distortion-Effect" target="_blank" rel="noopener"><span class="smfeed-item-img">
+                                    <img src="assets/img/projects.jpg" loading="lazy" alt data-lazy-force></span><span class="smfeed-item-url">
+                                        <svg class="svgsprite -dribbble"><use xlink:href="/assets/img/sprites/svgsprites.svg?2#dribbble"></use></svg>thomazgg</span>
+                                    <span class="smfeed-item-text">Making switch with SVG Distortion Effect</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section class="advantage">
+                <div class="advantage-content -cp">
+                    <div class="advantage-container">
+                        <div class="advantage-header">
+                            <h2>Benefits of working<br> with us</h2>
+                        </div>
+                        <div class="advantage-items">
+                            <div class="advantage-item">
+                                <div class="advantage-item-img"><img src="#" srcset="#" loading="lazy" alt></div>
+                                <div class="advantage-item-title">
+                                    <h3>Time zones ain’t no thing</h3>
+                                </div>
+                                <div class="advantage-item-text">
+                                    <p>Wherever you are in the world, you’ll feel like we’re right around the corner. With 10 years of experience, our business processes are seamless and time differences don’t matter.</p>
+                                </div>
+                            </div>
+                            <div class="advantage-item">
+                                <div class="advantage-item-img"><img src="#" srcset="#" loading="lazy" alt></div>
+                                <div class="advantage-item-title">
+                                    <h3>Full spectrum of services</h3>
+                                </div>
+                                <div class="advantage-item-text">
+                                    <p>Any solution your business needs, we’re on it: creating logos, development, interface design prior to development, technical support, and marketing.</p>
+                                </div>
+                            </div>
+                            <div class="advantage-item">
+                                <div class="advantage-item-img"><img src="#" srcset="#" loading="lazy" alt></div>
+                                <div class="advantage-item-title">
+                                    <h3>Impossible?<br> We’re on it</h3>
+                                </div>
+                                <div class="advantage-item-text">
+                                    <p>“Impossible” simply does not exist in our vocabulary. We develop products exactly as they were at the design stage, no simplifications, no shortcuts, no BS.</p>
+                                </div>
+                            </div>
+                            <div class="advantage-item">
+                                <div class="advantage-item-img"><img src="#" srcset="#" loading="lazy" alt></div>
+                                <div class="advantage-item-title">
+                                    <h3>Flexible work<br> terms</h3>
+                                </div>
+                                <div class="advantage-item-text">
+                                    <p>Just like we stick to a fixed budget, we stay within a set Time and Materials framework. Whatever terms we agree to will depend on your project needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="employment -simple">
+                <div class="employment-content -mb">
+                    <div class="employment-container">
+                        <div class="employment-top">
+                            <div class="employment-header">
+                                <h2>Lorem Ipsum é simplesmente<br> uma simulação de texto</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+            <!-- ======== OUTRO ======== -->
+            <section class="outro">
+                <div class="outro-content" data-cursor="-inverse">
+                    <div class="outro-body">
+                        <div class="outro-container">
+                            <div class="outro-header">
+                                <h2>Vamos construir seu projeto juntos.</h2><a href="./contact.html" data-cursor="-opaque">O que tem em mente?</a></div>
+                        </div>
+                    </div>
+                    <div class="outro-footer">
+                        <div class="outro-container">
+                            <div class="outro-grid">
+                                <div class="outro-grid-col -left">
+                                    <div class="outro-mail"><a href="mailto:uthomaz7@gmail.com" data-cursor="-opaque"><em><span>uthomaz7@gmail.com</span></em></a></div>
+                                    <div class="outro-copy"><address><p>Thomaz © 2022. Todos os direitos reservados.</p></address></div>
+                                    <div class="outro-link"><a class="outro-link-item" href="./privacy.html" data-cursor="-opaque">Política de Privacidade</a></div>
+                                </div>
+                                <div class="outro-grid-col -right">
+                                    <div class="outro-social">
+                                        <div class="outro-social-row">
+                                            <a class="outro-social-item" href="https://github.com/thomazgg" target="_blank" rel="noopener" aria-label="GitHub">
+                                                <span class="outro-social-item-title">
+                                                    <span data-text="GitHub">GitHub</span>
+                                                </span>
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a class="outro-social-item" href="https://www.behance.net/uthomaz" target="_blank" rel="noopener" aria-label="Behance">
+                                                <span class="outro-social-item-title">
+                                                    <span data-text="Behance">Behance</span>
+                                                </span>
+                                                <i class="fab fa-behance"></i>
+                                            </a>
+                                            <a class="outro-social-item" href="https://discord.gg/DJuK4KGa94" target="_blank" rel="noopener" aria-label="Discord">
+                                                <span class="outro-social-item-title">
+                                                    <span data-text="Discord">Discord</span>
+                                                </span>
+                                                <i class="fab fa-discord"></i>
+                                            </a>
+                                        </div>
+                                        <div class="outro-social-row">
+                                            <a class="outro-social-item" href="https://instagram.com/uthomaz" target="_blank" rel="noopener" aria-label="Instagram">
+                                                <span class="outro-social-item-title">
+                                                <span data-text="Instagram">Instagram</span>
+                                                </span>
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a class="outro-social-item" href="https://twitch.tv/uthomaz" target="_blank" rel="noopener" aria-label="Twitch">
+                                                <span class="outro-social-item-title">
+                                                    <span data-text="Twitch">Twitch</span></span>
+                                                <i class="fab fa-twitch"></i>
+                                            </a>
+                                            <a class="outro-social-item" href="https://youtube.com/c/uthomaz" target="_blank" rel="noopener" aria-label="YouTube">
+                                                <span class="outro-social-item-title">
+                                                        <span data-text="YouTube">YouTube</span>
+                                                </span>
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+<script src="./assets/js/bundle.js" defer></script><noscript><link rel="stylesheet" ></noscript>
+<script>
+    setTimeout(function() {
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(window.ymID = 22519915, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    }, 5000);
+</script><noscript>
+</html>
