@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Thomaz ⇀ Projetos</title>
+    <title>Thomaz ⇀ Home</title>
 
     <!--  
     ================= 
@@ -84,10 +84,11 @@
                             <div class="menu-grid-col -right">
                                 <div class="menu-title">Menu</div>
                                 <div class="menu-nav" role="navigation" data-cursor="-opaque">
-                                    <div class="menu-nav-item"><a href="/index.html" data-magnetic><em><span data-text="Home">Home</span></em></a></div>
-                                    <div class="menu-nav-item"><a href="/about.html" data-magnetic><em><span data-text="About">About</span></em></a></div>
-                                    <div class="menu-nav-item"><a href="/projects.html" data-magnetic><em><span data-text="Projects">Projects</span></em></a></div>
-                                    <div class="menu-nav-item"><a href="/contact.html" data-magnetic><em><span data-text="Contact">Contact</span></em></a></div>
+                                    <!-- class="menu-nav-item -active"> -->
+                                    <div class="menu-nav-item"><a href="./index.html" data-magnetic><em><span data-text="Home">Home</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="./about.html" data-magnetic><em><span data-text="Sobre">Sobre</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="./projects.html" data-magnetic><em><span data-text="Projetos">Projetos</span></em></a></div>
+                                    <div class="menu-nav-item"><a href="./contact.html" data-magnetic><em><span data-text="Contato">Contato</span></em></a></div>
                                 </div>
                             </div>
                         </div>
@@ -102,17 +103,16 @@
             </div>
         </div>
     </nav>
-    <div class="view" data-controller="projectsController" id="view-main">
+    <div class="view" data-controller="projectsController" id="view-main"><canvas class="scene"></canvas>
         <div class="layout" role="main" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
-            <div class="scroll-content" style="transform: translate3d(0px, 0px, 0px);">
-                <!-- ======== NAVBAR ======== -->
-                <div class="navbar">
-                    <div class="navbar-strip">
-                        <div class="navbar-grid">
-                            <div class="navbar-grid-col -left">
-                                <div class="navbar-logo">
-                                    <a href="/">
-                                        <svg class="svgsprite -logo" width="35" height="35" viewbox="0 0 512 512">
+            <!-- ======== NAVBAR ======== -->
+            <div class="navbar">
+                <div class="navbar-strip">
+                    <div class="navbar-grid">
+                        <div class="navbar-grid-col -left">
+                            <div class="navbar-logo" data-cursor-text="Home">
+                                <a href="/" data-cursor="-opaque">
+                                    <svg class="svgsprite -logo" width="350" height="350" viewbox="0 0 512 512">
                                     <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
                                     fill="#000000" stroke="none">
                                     <path d="M1460 1595 l0 -465 154 0 155 0 3 193 c3 181 4 194 26 224 35 50 103
@@ -149,26 +149,70 @@
                                     0 -90z"/>
                                     </g>
                                     </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="navbar-grid-col -right" data-cursor="-opaque">
-                                <!--
-                            <div class="navbar-link"><button class="btn btn_nav" data-magnetic><span>showreel</span></button></div>
-                            -->
-                                <div class="navbar-home"><a class="btn btn_nav" href="./index.html" data-magnetic><span>home</span></a></div>
-                                <div class="navbar-about"><a class="btn btn_nav" href="./about.html" data-magnetic><span>about</span></a></div>
-                                <div class="navbar-projects"><a class="btn btn_nav" href="./projects.html" data-magnetic><span>projects</span></a></div>
-                                <!--
-                            <div class="navbar-contact"><a class="btn btn_nav" href="./contact.html" data-magnetic><span>contact</span></a></div>
-                            <div class="navbar-toggle"><button class="btn btn_menu" aria-label="menu"><span class="btn_menu-title">menu</span></span></button></div>
-                            -->
+                                </a>
                             </div>
                         </div>
+
+                        <div class="navbar-grid-col -right" data-cursor="-opaque">
+                            <!--
+                            <div class="navbar-link"><button class="btn btn_nav" data-magnetic><span>showreel</span></button></div>
+                            -->
+                            <div class="navbar-about"><a class="btn btn_nav" href="./about.html" data-magnetic><span>sobre</span></a></div>
+                            <div class="navbar-projects"><a class="btn btn_nav" href="./projects.html" data-magnetic><span>projetos</span></a></div>
+                            <!--
+                            <div class="navbar-contact"><a class="btn btn_nav" href="./contact.html" data-magnetic><span>sobre</span></a></div>
+                            <div class="navbar-toggle"><button class="btn btn_menu" aria-label="menu"><span class="btn_menu-title">menu</span></span></button></div>
+                            -->
+                        </div>
+
                     </div>
                 </div>
-                <!-- ======== HEADER ======== -->
-                <header class="tophead">
+            </div>
+            <!-- ======== HEADER ======== -->
+            <header class="hero">
+
+                <div class="-content">
+
+                    <div class="-body">
+                        <div class="-container">
+                            <div class="images">
+                                <div class="left img"></div>
+                                <div class="right img"></div>
+                            </div>
+                            <div class="hero-image">
+                                <div class="wrapper-img">
+                                    <div class="box"></div>
+                                    <div>
+                                        <img class="image" src="./assets/img/five/img.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="./projects.html" data-cursor-text="Explore" data-cursor="-color-four">
+                                <p class="header-title">projetos</p>
+                            </a>
+                            <!--
+                                <div class="floating-icons">
+                                <a href="https://dribbble.com/uthomaz" target="_blank" rel="noreferrer" class="dribbble" data-cursor-text="Dribbble" data-cursor="-color-dribbble">
+                                    <span><img src="./assets/img/_main/sprites/dribbble.svg" alt="dribbble"/></span>
+                                </a>
+                                <a href="https://br.linkedin.com/in/joao-victor-thomaz-cardoso-26b9841b0" target="_blank" rel="noreferrer" class="linkedin" data-cursor-text="Linkedin" data-cursor="-color-linkedin">
+                                    <span><img src="./assets/img/_main/sprites/linkedin.svg" alt="linkedin"/></span>
+                                </a>
+                                <a href="https://www.behance.net/uthomaz" target="_blank" rel="noreferrer" class="behance" data-cursor-text="Behance" data-cursor="-color-behance">
+                                    <span><img src="./assets/img/_main/sprites/behance.svg" alt="behance"/></span>
+                                </a>
+                            </div>
+                            -->
+                            <div class="arrow" class="preview" data-cursor-text="Scroll 👇">
+                                <span></span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="-bg"></div>
+                </div>
+            </header>
+            <div class="scroll-content" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="tophead">
                     <div class="tophead-content">
                         <div class="tophead-container">
                             <div class="tophead-title -lg">
@@ -176,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                </header>
+                </div>
                 <section class="screenshot">
                     <div class="screenshot-preview -lg"><img src="./assets/img/_main/projects.jpg" alt></div>
                 </section>
@@ -257,7 +301,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- ======== OUTRO ======== -->
                 <section class="outro">
                     <div class="outro-content" data-cursor="-inverse">
@@ -323,8 +366,8 @@
                         </div>
                     </div>
                 </section>
-
             </div>
+
             <div class="scrollbar-track scrollbar-track-x" style="display: none;">
                 <div class="scrollbar-thumb scrollbar-thumb-x" style="width: 781px; transform: translate3d(0px, 0px, 0px);"></div>
             </div>
@@ -350,6 +393,7 @@
     <section>
         <!-- Index JS file -->
         <script src="./assets/js/bundle.js" defer></script>
+        <script src="./assets/js/script.js" defer></script>
 
         <noscript>
             Parabéns Viajante do Tempo, você está nos anos 90. Agora, para acessar este site, você precisa
