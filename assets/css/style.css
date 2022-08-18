@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display&Alumni+Sans+Pinstripe&family=Playfair+Displayy&family=Raleway:wght@100&=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 
 /* ! ======= Variables ======= ! */
 
 :root {
     --white: #fff;
     --black: #111;
-    --main-font: "Righteous", sans-serif;
+    --font: "Dancing Script", cursive;
+    --main-font: "Raleway", sans-serif;;
     --bold-font: 500;
     --h1: 12rem;
     --h2: 7.2rem;
@@ -78,9 +81,9 @@
 .-bg {
     position: absolute;
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     background: var(--white);
-    margin-top: -700px;
+    margin-top: -800px;
     z-index: -1;
 }
 
@@ -229,9 +232,10 @@
 
 .-container p {
     width: 100%;
+    height: 61%;
     text-align: center;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -242,8 +246,8 @@
     display: inline-block;
     line-height: 1em;
     /*     text-transform: uppercase; */
-    font-size: 200px;
-    font-family: var(--main-font);
+    font-size: 400px;
+    font-family: var(--font);
 }
 
 
@@ -535,3 +539,86 @@
         transform: translateX(-50%) translateY(calc(-50% - 10px))
     }
 }
+
+.text {
+    font-family: var(--main-font);
+    position: absolute;
+    width: 2000px;
+    left: 10%;
+    top: 40%;
+/*     font-weight: 600; */
+    font-size: 150px;
+}
+
+p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.word {
+    position: absolute;
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ingles{
+    color: #ad4444;
+}
+
+.mandarin{
+    color: #b92954;
+}
+
+.hindi{
+    color: #c02b8e;
+}
+
+.espanhol{
+    color: #9016a0;
+}
+
+.frances{
+    color: #6c44ad;
+}
+
+.arabe{
+    color: #6944ad;
+}
+
+.bengali{
+    color: #2124d3;
+}
+
+.russo{
+    color: #3aabd8;
+}
+
+.portugues{
+    color: #ced849;
+}
+
+.indonesio{
+    color: #ce953f;
+}
+
