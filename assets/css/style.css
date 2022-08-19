@@ -8,7 +8,8 @@
     --white: #fff;
     --black: #111;
     --font: "Dancing Script", cursive;
-    --main-font: "Raleway", sans-serif;;
+    --main-font: "Raleway", sans-serif;
+    ;
     --bold-font: 500;
     --h1: 12rem;
     --h2: 7.2rem;
@@ -22,13 +23,13 @@
 }
 
 @media(min-width:1540px) {
-     :root {
+    :root {
         --h1: 14rem
     }
 }
 
 @media(max-width:1000px) {
-     :root {
+    :root {
         --h1: 9rem;
         --h2: 6.4rem;
         --h3: 3.2rem;
@@ -40,7 +41,7 @@
 }
 
 @media(max-width:800px) {
-     :root {
+    :root {
         --h1: 7.2rem;
         --h2: 5.6rem;
         --h3: 3rem;
@@ -49,6 +50,7 @@
         --gap-4: 2.8rem;
         --gap-3: 2rem
     }
+
     a.button {
         height: 12rem;
         width: 12rem
@@ -56,7 +58,7 @@
 }
 
 @media(max-width:600px) {
-     :root {
+    :root {
         --nav-height: 8rem;
         --body: 1.9rem;
         --h1: 12vw;
@@ -260,6 +262,7 @@
     left: 49.5%;
     transform: rotate(45deg);
     animation: arrow-opacity .5s alternate infinite;
+    z-index: 3;
 }
 
 .arrow span {
@@ -276,6 +279,7 @@
     0% {
         transform: translateX(-.5rem);
     }
+
     100% {
         transform: translateY(.5rem);
     }
@@ -285,6 +289,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -327,6 +332,7 @@
     .-container .header-title .letter {
         font-size: 180px;
     }
+
     /*     
     .-container .img {
         width: 200px;
@@ -496,8 +502,8 @@
 }
 
 .hero .floating-icons>a:hover span {
-    height: calc(var(--ico-dimension)*1.5)!important;
-    width: calc(var(--ico-dimension)*1.5)!important
+    height: calc(var(--ico-dimension)*1.5) !important;
+    width: calc(var(--ico-dimension)*1.5) !important
 }
 
 @media(max-width:1000px) {
@@ -506,6 +512,7 @@
         display: flex;
         justify-content: center;
     }
+
     .hero .floating-icons>a {
         -webkit-animation: none;
         animation: none;
@@ -514,12 +521,14 @@
         -webkit-transform: translateX(0) translateY(0);
         transform: translateX(0) translateY(0)
     }
+
     .hero .floating-icons>a:before {
         content: none
     }
+
     .hero .floating-icons>a:hover span {
-        height: var(--ico-dimension)!important;
-        width: var(--ico-dimension)!important
+        height: var(--ico-dimension) !important;
+        width: var(--ico-dimension) !important
     }
 }
 
@@ -534,6 +543,7 @@
         -webkit-transform: translateX(-50%) translateY(calc(-50% + 10px));
         transform: translateX(-50%) translateY(calc(-50% + 10px))
     }
+
     to {
         -webkit-transform: translateX(-50%) translateY(calc(-50% - 10px));
         transform: translateX(-50%) translateY(calc(-50% - 10px))
@@ -545,8 +555,8 @@
     position: absolute;
     width: 2000px;
     left: 10%;
-    top: 40%;
-/*     font-weight: 600; */
+    top: 23%;
+    /*     font-weight: 600; */
     font-size: 150px;
 }
 
@@ -582,43 +592,42 @@ p {
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.ingles{
+.ingles {
     color: #ad4444;
 }
 
-.mandarin{
+.mandarin {
     color: #b92954;
 }
 
-.hindi{
+.hindi {
     color: #c02b8e;
 }
 
-.espanhol{
+.espanhol {
     color: #9016a0;
 }
 
-.frances{
+.frances {
     color: #6c44ad;
 }
 
-.arabe{
+.arabe {
     color: #6944ad;
 }
 
-.bengali{
+.bengali {
     color: #2124d3;
 }
 
-.russo{
+.russo {
     color: #3aabd8;
 }
 
-.portugues{
+.portugues {
     color: #ced849;
 }
 
-.indonesio{
+.indonesio {
     color: #ce953f;
 }
-
