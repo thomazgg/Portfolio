@@ -1857,22 +1857,22 @@ em {
 /* two */
 
 .-color-two {
-    color: #7700ff
+    color: #5e00e4
 }
 
 .-color-two-bg {
-    background-color: #7700ff
+    background-color: #5e00e4
 }
 
 
 /* three */
 
 .-color-three {
-    color: #00eaff
+    color: #845ae4
 }
 
 .-color-three-bg {
-    background-color: #00eaff
+    background-color: #845ae4
 }
 
 
@@ -6886,7 +6886,7 @@ em {
 
 @media (min-width:450px) {
     .featured-item-img {
-        width: 450px;
+        width: 600px;
         height: 450px;
         padding-bottom: 0
     }
