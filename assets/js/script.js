@@ -66,20 +66,20 @@ TweenMax.to(".navbar-logo", 2, {
     delay: 3.6,
 });
 
-// -------- link --------
+// -------- home --------
 
-TweenMax.to(".navbar-link", 0, {
+TweenMax.to(".navbar-home", 0, {
     y: "-30",
     opacity: 0,
     ease: Expo.easeInOut,
     delay: 0,
 });
 
-TweenMax.to(".navbar-link", 2, {
+TweenMax.to(".navbar-home", 2, {
     y: "0",
     opacity: 1,
     ease: Expo.easeInOut,
-    delay: 3.8,
+    delay: 1.2,
 });
 
 
