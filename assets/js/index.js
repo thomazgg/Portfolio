@@ -122,7 +122,7 @@ TweenMax.to(".navbar-logo", 2, {
     delay: 1,
 });
 
-// -------- link --------
+// -------- home --------
 
 TweenMax.to(".navbar-home", 0, {
     y: "-30",
