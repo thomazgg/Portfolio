@@ -2370,7 +2370,7 @@ em {
 .menu-nav-item {
     position: relative;
     display: block;
-    margin-bottom: -8px;
+    margin-bottom: 16px;
     /*     padding: 4px 0 */
 }
 
