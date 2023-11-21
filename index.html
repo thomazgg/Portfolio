@@ -1,682 +1,1174 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en" class="lenis lenis-smooth">
+<head>
+    <title>Thomaz ⇀ Home</title>
 
-    <head>
+    <!--  
+    ================= 
+        
+    author: Joao Thomaz 
+    email: uthomaz7@gmail.com 
+    website: https://thomazgg.github.io/Portfolio/ 
 
-        <title>Thomaz ⇀ Home</title>
+    ================= 
+    -->
 
-        <!--  
-        ================= 
-            
-        author: Joao Thomaz 
-        email: uthomaz7@gmail.com 
-        website: https://thomazgg.github.io/Portfolio/ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Olá, me chamo Thomaz — UX/UI Designer, Brasil. Tenho paixão por criar experiências de que sejam perfeitas, significativas e impactantes.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        ================= 
-        -->
+    <!-- social-meta-tags -->
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Olá, me chamo Thomaz — UX/UI Designer, Brasil. Tenho paixão por criar experiências de que sejam perfeitas, significativas e impactantes.">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:site_name" content="Thomaz's Portfolio">
+    <meta property="og:url" content="uthomaz.com">
+    <meta property="og:title" content="Thomaz's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Portfolio">
 
-        <!-- social-meta-tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thomaz's Portfolio">
+    <meta name="twitter:description" content="Portfolio">
 
-        <meta property="og:site_name" content="Thomaz's Portfolio">
-        <meta property="og:url" content="uthomaz.com">
-        <meta property="og:title" content="Thomaz's Portfolio">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Portfolio">
+    <link rel="shortcut icon" href="./assets/img/sprites/control.png">
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Thomaz's Portfolio">
-        <meta name="twitter:description" content="Portfolio">
+    <!-- css assets -->
 
-        <link rel="shortcut icon" href="./assets/img/_main/sprites/control.png">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" id="global-style-css" href="./assets/css/style.css" type="text/css" media="all">
 
-        <!-- preload -->
+    <!-- scripts -->
+    
+    <script type="text/javascript" src="./assets/js/loadContent.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
 
-        <link data-n-head="ssr" rel="preload" as="style" href="./assets/css/fonts.css">
-        <link rel="preload" href="./assets/css/app.css" as="style">
-
-        <!-- css assets -->
-
-        <link rel="stylesheet" href="./assets/css/all.css">
-        <link rel="stylesheet" href="./assets/css/app.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/boxicons.css">
-
-        <!-- scripts -->
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-
-    </head>
-
-    <body>
-        <div class="loader loader_overlay -visible"></div>
-        <!-- ======== MENU ======== -->
-        <nav class="menu">
-            <div class="menu-toggle">
-                <button class="btn btn_menu" aria-label="menu" data-cursor="-menu" data-cursor-stick=".btn_menu-box">
-                    <span class="btn_menu-title" style="visibility:hidden;">menu</span>
-                    <span class="btn_menu-box"
-                        data-magnetic="{&quot;x&quot;:&quot;0.08&quot;,&quot;y&quot;:&quot;0.08&quot;}">
-                        <span></span>
-                        <span></span>
-                    </span>
+<header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt="thomaz">
+                </a>
+                <button type="button" class="navbar-menu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
                 </button>
             </div>
-            <div class="menu-box">
-                <div class="menu-backdrop"></div>
-                <div class="menu-content">
-                    <div class="menu-body">
-                        <div class="menu-container">
-                            <div class="menu-grid">
-                                <div class="menu-grid-col -left">
-                                    <div class="menu-title">Social</div>
-                                    <div class="menu-social" data-cursor="-opaque">
-                                        <a class="menu-social-item" href="https://github.com/thomazgg" target="_blank" rel="noopener" data-magnetic><em><span data-text="GitHub">GitHub</span></em></a>
-                                        <a class="menu-social-item" href="www.linkedin.com/in/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Linkedin">Linkedin</span></em></a>
-                                        <a class="menu-social-item" href="https://www.behance.net/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Behance">Behance</span></em></a>
-                                        <a class="menu-social-item" href="https://dribbble.com/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Dribbble">Dribbble</span></em></a>
-                                        <a class="menu-social-item" href="https://instagram.com/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Instagram">Instagram</span></em></a>
-                                        <a class="menu-social-item" href="https://discord.gg/DJuK4KGa94" target="_blank" rel="noopener" data-magnetic><em><span data-text="Discord">Discord</span></em></a>
-                                        <a class="menu-social-item" href="https://twitch.tv/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="Twitch">Twitch</span></em></a>
-                                        <a class="menu-social-item" href="https://youtube.com/c/uthomaz" target="_blank" rel="noopener" data-magnetic><em><span data-text="YouTube">YouTube</span></em></a>
-                                    </div>
-                                </div>
-                                <div class="menu-grid-col -right">
-                                    <div class="menu-title">Menu</div>
-                                    <div class="menu-nav" role="navigation" data-cursor="-opaque">
-                                        <!-- class="menu-nav-item -active"> -->
-                                        <div class="menu-nav-item"><a href="./index.html" data-magnetic><em><span
-                                                        data-text="Home">Home</span></em></a></div>
-                                        <div class="menu-nav-item"><a href="./about.html" data-magnetic><em><span
-                                                        data-text="Sobre">Sobre</span></em></a></div>
-                                        <div class="menu-nav-item"><a href="./projects.html" data-magnetic><em><span
-                                                        data-text="Projetos">Projetos</span></em></a></div>
-                                        <div class="menu-nav-item"><a href="./contact.html" data-magnetic><em><span
-                                                        data-text="Contato">Contato</span></em></a></div>
-                                    </div>
-                                </div>
+            <div class="navbar-menu" data-lenis-prevent="">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" target="_self" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" target="_self" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="dd">Projects</a>
+                        <div class="dd-nav">
+                            <div class="dd-content">
+                                <ul class="dd-list">
+                                    <li class="dd-item">
+                                        <a href="./projects.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">My Works</h6>
+                                                <p class="dd-paragraph">Explore completed web and content creation projects.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dd-item">
+                                        <a href="./case_studies.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Case Studies</h6>
+                                                <p class="dd-paragraph">Detailed project insights, challenges, and results.</p>
+                                            </div>
+                                        </a>
+                                    </li>                                    <li class="dd-item">
+                                        <a href="./gallery.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Gallery</h6>
+                                                <p class="dd-paragraph">Visual showcase of projects with aesthetic excellence.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="menu-footer">
-                        <div class="menu-container">
-                            <div class="menu-title -sm">Get in Touch</div>
-                            <div class="menu-mail"><a
-                                    href="mailto:uthomaz7@gmail.com"><span>uthomaz7@gmail.com</span></a></div>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" target="_self" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="./contact.html" target="_self" class="btn btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Contact me</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <div class="view" data-controller="homeController" id="view-main"><canvas class="scene"></canvas>
-            <div class="layout" role="main">
-                <!-- ======== NAVBAR ======== -->
-                <div class="navbar">
-                    <div class="navbar-strip">
-                        <div class="navbar-grid">
-                            <div class="navbar-grid-col -left">
-                                <div class="navbar-logo" data-cursor-text="Home">
-                                    <a href="/" data-cursor="-opaque">
-                                        <svg class="svgsprite -logo" width="350" height="350" viewbox="0 0 512 512">
-                                            <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-                                                fill="#000000" stroke="none">
-                                                <path d="M1460 1595 l0 -465 154 0 155 0 3 193 c3 181 4 194 26 224 35 50 103
-                                    77 192 78 87 0 131 -20 167 -75 22 -31 23 -42 23 -226 l0 -194 155 0 155 0 0
-                                    242 c0 275 -5 296 -83 363 -70 60 -134 79 -272 79 -143 1 -216 -17 -306 -75
-                                    l-59 -39 0 180 0 180 -155 0 -155 0 0 -465z" />
-                                                <path d="M880 1905 l0 -95 -70 0 -70 0 0 -95 0 -95 70 0 70 0 0 -178 c0 -165
-                                    2 -181 23 -222 38 -75 64 -84 260 -88 l167 -4 0 96 0 96 -59 0 c-88 0 -91 5
-                                    -91 166 l0 134 75 0 76 0 -3 93 -3 92 -72 3 -73 3 0 94 0 95 -150 0 -150 0 0
-                                    -95z" />
-                                                <path d="M5630 1763 l0 -81 1098 -6 c603 -3 1113 -10 1132 -14 38 -8 52 -39
-                                    28 -59 -9 -8 -341 -16 -1013 -27 -1071 -17 -1091 -18 -1166 -69 -54 -37 -73
-                                    -71 -77 -140 -8 -131 73 -214 231 -236 68 -10 1559 5 1799 17 141 8 148 9 197
-                                    40 l52 32 9 -24 c18 -49 43 -56 193 -56 l138 0 -3 93 -3 92 -32 3 -31 3 -4
-                                    177 c-3 201 -12 228 -86 270 -91 51 -85 50 -1314 58 l-1148 7 0 -80z m2270
-                                    -333 c0 -20 -11 -42 -33 -66 -32 -36 -36 -37 -129 -45 -137 -11 -872 -28
-                                    -1365 -31 l-421 -3 -26 24 c-34 32 -33 66 1 88 21 14 53 19 148 21 161 5 1627
-                                    39 1738 41 l87 1 0 -30z" />
-                                                <path d="M2931 1820 c-157 -33 -247 -90 -299 -190 -33 -63 -34 -68 -30 -160 3
-                                    -73 9 -105 27 -138 47 -91 140 -154 278 -189 98 -25 448 -25 547 0 91 23 179
-                                    71 221 120 60 70 85 184 65 291 -23 124 -94 196 -239 244 -71 24 -91 26 -301
-                                    28 -124 2 -245 -1 -269 -6z m376 -185 c35 -11 62 -27 87 -55 33 -37 36 -45 36
-                                    -101 0 -59 -2 -63 -43 -104 -55 -56 -102 -68 -237 -63 -89 3 -112 7 -150 28
-                                    -113 63 -119 210 -11 274 18 10 47 22 64 26 57 14 201 11 254 -5z" />
-                                                <path d="M4405 1816 c-5 -3 -35 -11 -65 -20 -31 -8 -84 -33 -117 -55 l-62 -40
-                                    -3 52 -3 52 -150 0 -150 0 0 -335 0 -335 153 -3 152 -3 0 178 c0 207 10 243
-                                    79 288 80 54 224 41 268 -23 15 -23 19 -55 23 -232 l5 -205 152 -3 151 -3 4
-                                    188 c3 178 4 190 27 227 36 57 113 90 196 84 65 -6 107 -26 128 -62 8 -14 14
-                                    -93 17 -226 l5 -205 155 0 155 0 0 240 -1 240 -26 51 c-55 104 -158 154 -317
-                                    154 -134 0 -265 -41 -350 -108 l-24 -19 -29 33 c-16 18 -54 45 -85 61 -49 23
-                                    -70 27 -167 30 -61 1 -115 1 -121 -1z" />
-                                                <path d="M8340 1710 l0 -90 243 -2 242 -3 -242 -160 -243 -160 0 -82 0 -83
-                                    460 0 460 0 0 95 0 95 -251 2 -252 3 252 159 251 159 0 78 0 79 -460 0 -460 0
-                                    0 -90z" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="navbar-grid-col -right" data-cursor="-opaque">
-                                <!-- <div class="navbar-link"><button class="btn btn_nav" data-magnetic><span>showreel</span></button></div> -->
-                                <div class="navbar-home"><a class="btn btn_nav" href="./index.html" data-magnetic><span>home</span></a></div>
-                                <div class="navbar-about"><a class="btn btn_nav" href="./about.html" data-magnetic><span>sobre</span></a></div>
-                                <div class="navbar-projects"><a class="btn btn_nav" href="./projects.html" data-magnetic><span>projetos</span></a></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- ======== HEADER ======== -->
-                <header class="hero">
-                    <!---->
-                    <div class="hero-header" >
-                        <!---->
-                        <div class="h-0 d-flex circle-wrapper justify-content-center align-items-center" >
-                            <h2 class="headline-font text-center should-animate d-inline-block position-relative headline-row display-3"  style="opacity: 1;">
-                                <span class="headline-text-row position-relative p-1 display-3 headline-text-row--0" data-cursor="-opaque">Welcome to the</span>
-                            </h2>
-                        </div>
-                        <!---->
-                        <div class="h-1 d-flex circle-wrapper justify-content-center align-items-center">
-                            <h2   data-fromy="50"  class="headline-font text-center should-animate d-inline-block position-relative headline-row display-3" style="opacity: 1;">
-                                <span  class="headline-text-row position-relative p-1 display-3 headline-text-row--1">portfolio</span>
-                            </h2>
-                        </div>
-                        <!---->
-                        <div class=" d-flex circle-wrapper justify-content-center align-items-center" >
-                            <h2 class="h-2 headline-font text-center should-animate d-inline-block position-relative headline-row display-3"  style="opacity: 1;">
-                                <span class="headline-text-row position-relative p-1 display-3 headline-text-row--2">of</span>
-                                <svg viewBox="0 0 320 320" class="circle-svg position-absolute center d-none d-md-block" >
-                                    <circle class="h-3" cx="160" cy="160" r="100" stroke="#000000" fill="none" stroke-width="2" stroke-linecap="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></circle>
-                                </svg>
-                            </h2>
-                            <div id="caption-wrapper" class="h-3 d-none d-md-flex pl-xl-3 ml-xl-1 py-1 py-lg-0 align-items-center justify-content-center pl-1 pl-md-2 should-animate position-relative"  style="opacity: 1;">
-                                <!-- <img src="./assets/img/_main/sprites/arrow-down.svg" data-props="opacity,rotation,y,x" data-fromrotation="-40" data-torotation="0" data-fromy="-80" data-fromx="-50" data-tox="0" data-toy="0" data-delay=".75" alt="icon" class="arrow arrow-down should-animate"  style="opacity: 1;">-->
-                                <p class="h-4 h1 light color-black-opacity" >(</p>
-                                <p class="h-4 caption px-7 px-xlg-2 kobe-web ls-19 text-center lh-11" >Hi! I’m Thomaz, Web Developer and UI UX Designer from Brazil.</p>
-                                <p class="h-4 h1 light color-black-opacity" >)</p> 
-                                <img src="./assets/img/_main/sprites/arrow-up.svg" alt="icon" class="arrow arrow-up should-animate"  style="opacity: 1;">
+            <div class="navbar-actions">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- toggle button -->
+                        <div class="btn" id="toggle-btn">
+                            <div class="btn-outline btn-outline-1"></div>
+                            <div class="btn-outline btn-outline-2"></div>
+                            <div id="hamburger">
+                            <span></span>
                             </div>
                         </div>
-                        <!---->
-                        <div class="h-5 d-flex circle-wrapper justify-content-center align-items-center" >
-                            <h2  class="headline-font text-center should-animate d-inline-block position-relative headline-row display-2"  style="opacity: 1;">
-                                <span class="headline-text-row position-relative p-1 display-2 headline-text-row--3" >thomaz</span>
-                            </h2>
-                        </div>
-                        <!---->
-                        <div class="h-6 d-flex circle-wrapper justify-content-center align-items-center" >
-                            <div  class="parallax-wrapper large-text-wrapper should-animate not-wrapped position-absolute" data-v-6531f2c0=""  style="opacity: 1;">
-                                <div class="parallax text-center" data-v-6531f2c0="" style="top: 0px; transform: translate3d(0px, 0px, 0px);">
-                                    <h2 class="large-text color-pink bold-font d-inline-block" data-v-6531f2c0="" >Art.</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div  class="h-6 position-relative on-top mt-3 mt-md-4 should-animate"  style="opacity: 1;">
-                            <div class="d-flex justify-content-center " >
-                                <h3 >Web Developer</h3>
-                                <h3 class="headline-font px-7 px-md-1" >&amp;</h3>
-                                <h3 >UI UX Designer</h3>
-                            </div>
-                        </div>
-                        <!---->
-                    </div>
-                    <!---->
-                    <div class="-container">
-                        <div class="h-6 floating-icons">
-                            <a href="https://dribbble.com/uthomaz" target="_blank" rel="noreferrer"
-                                class="dribbble" data-cursor-text="Dribbble" data-cursor="-color-dribbble">
-                                <span><img src="./assets/img/_main/sprites/dribbble.svg"
-                                        alt="dribbble" /></span>
-                            </a>
-                            <a href="www.linkedin.com/in/uthomaz"
-                                target="_blank" rel="noreferrer" class="linkedin" data-cursor-text="Linkedin"
-                                data-cursor="-color-linkedin">
-                                <span><img src="./assets/img/_main/sprites/linkedin.svg"
-                                        alt="linkedin" /></span>
-                            </a>
-                            <a href="https://www.behance.net/uthomaz" target="_blank" rel="noreferrer"
-                                class="behance" data-cursor-text="Behance" data-cursor="-color-behance">
-                                <span><img src="./assets/img/_main/sprites/behance.svg" alt="behance" /></span>
-                            </a>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="arrow" class="preview" data-cursor-text="Scroll 👇" style="bottom: -15rem;">
-                        <span></span>
-                    </div>
-                    <!-- 
-                    <div class="text" style="opacity: 1;">
-                        <p>
-                            <span class="word portugues">portfólio</span>
-                            <span class="word mandarin">文件夹</span>
-                            <span class="word ingles">portfolio</span>
-                            <span class="word hindi">पोर्टफोलियो</span>
-                            <span class="word espanhol">portafolio</span>
-                            <span class="word bengali">পোর্টফোলিও</span>
-                            <span class="word frances">portefeuille</span>
-                            <span class="word russo">портфолио</span>
-                            <span class="word indonesio">portofolio</span>
-                        </p>
-                    </div> 
-                    -->
-                </header>
-                <!-- ======== FEATURED PROJECTS======== -->
-                <section class="featured">
-                    <div class="featured-content">
-                        <div class="featured-container">
-                            <div class="featured-header">
-                                <h2>projetos –<span>em destaque</span></h2>
-                            </div>
-                            <div class="featured-items">
-                                <div class="featured-item" data-project="one" data-project-bg="#f3e0f1" data-cursor="-color-one">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img" href="https://zgowiecre.com" target="_blank"
-                                                aria-label="one">
-                                                <picture>
-                                                    <source srcset="./assets/img/one/cover.png"
-                                                        media="(max-width:1920px)">
-                                                    <img src="./assets/img/one/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <div class="featured-item-header">
-                                                <h3>zgowiecre.com</h3>
-                                            </div>
-                                            <div class="featured-item-text">
-                                                <p>Official website of zgowie</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>website, development, ui-ux</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="featured-item" data-project="two" data-project-bg="#e2d5f9" data-cursor="-color-two">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img" href="https://thomazgg.github.io/CoffeeShop/"
-                                                target="_blank" target="_blank" aria-label="two">
-                                                <picture>
-                                                    <source srcset="./assets/img/two/cover.png"
-                                                        media="(max-width:1920px)">
-                                                    <img src="./assets/img/two/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <!--                                         
-                                        <div class="featured-item-header">
-                                            <h3>two</h3>
-                                        </div> 
-                                        -->
-                                            <div class="featured-item-text">
-                                                <p>Simple Coffe Shop Project</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>website, development, product</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="featured-item" data-project="three" data-project-bg="#e2d5f9" data-cursor="-color-three""
-                                    data-cursor="-color-three">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img" href="https://www.figma.com/file/9RagTPGqIU05eVl7W70T0Q/Kabum-2?node-id=593%3A270"
-                                                target="_blank" aria-label="three">
-                                                <picture>
-                                                    <source srcset="./assets/img/two/cover.png"
-                                                        media="(max-width:1920px)">
-                                                    <img src="./assets/img/three/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <!--                                         
-                                            <div class="featured-item-header">
-                                                <h3>three</h3>
-                                            </div> 
-                                            -->
-                                            <div class="featured-item-text">
-                                                <p>Mobile App - App de Vendas</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>app, design, ui-ux, figma concept</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="featured-item" data-project="four" data-project-bg="#f1ebf9"
-                                    data-cursor="-color-four">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img"
-                                                href="https://www.behance.net/gallery/138560785/ReDesigns"
-                                                target="_blank" aria-label="four">
-                                                <picture>
-                                                    <source
-                                                        srcset="./assets/img/four/cover.png, ./assets/img/four/cover@2x.png 2x"
-                                                        media="(max-width:1920px)">
-                                                    <img src="./assets/img/four/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <!--                                         
-                                            <div class="featured-item-header">
-                                                <h3>four</h3>
-                                            </div> 
-                                            -->
-                                            <div class="featured-item-text">
-                                                <p>ReDesign for<br>RodGrossi's Website</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>branding, ui-ux, redesign, website</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--                         
-                                <div class="featured-item" data-project="five" data-project-bg="#fee6ec" data-cursor="-color-five">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img" href="https://zgowiecre.com" target="_blank" aria-label="five">
-                                                <picture>
-                                                    <source srcset="./assets/img/five/cover.png" media="(max-width:1920px)">
-                                                    <img src="./assets/img/five/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <div class="featured-item-text">
-                                                <p>NOME DO PROJETO</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>website, development, ui-ux</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>  
-                                -->
-                                <!--
-                                <div class="featured-item" data-project="six" data-project-bg="#FEF8F7" data-cursor="-color-six">
-                                    <div class="featured-item-grid">
-                                        <div class="featured-item-grid-col -right">
-                                            <a class="featured-item-img" href="https://www.behance.net/uthomaz" target="_blank" aria-label="six">
-                                                <picture>
-                                                    <source srcset="./assets/img/six/cover.png" media="(max-width:1920px)">
-                                                    <img src="./assets/img/six/face.jpg" loading="lazy" alt>
-                                                </picture>
-                                            </a>
-                                        </div>
-                                        <div class="featured-item-grid-col -left">
-                                            <div class="featured-item-text">
-                                                <p>NOME DO PROJETO</p>
-                                            </div>
-                                            <div class="featured-item-tags">
-                                                <p>website, development, ui-ux</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                                -->
-                            </div>
-                            <div class="featured-more"><a class="btn btn_more" href="./projects.html"
-                                    data-magnetic><span class="btn_more-title"><span
-                                            data-text="Ver todos os projetos">Ver todos os projetos</span></span><span
-                                        class="btn_more-ripple"><span></span></span></a></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- ======== CONTACT ======== -->
-                <section class="employment" style="margin-top: 300px" data-cursor="-color-four">
-                    <div class="employment-content -ct">
-                        <div class="employment-container">
-                            <div class="employment-top">
-                                <div class="employment-header">
-                                    <h2>Procurando por<br> um novo design?</h2>
-                                </div>
-                            </div>
-                            <div class="employment-bottom">
-                                <div class="employment-grid">
-                                    <div class="employment-grid-col -left">
-                                        <a class="employment-preview" height="50vh" data-cursor-text="Veja mais"
-                                            href="./projects.html"><img src="assets/img/_main/about_me.jpg"
-                                                loading="lazy" alt></a>
-                                    </div>
-                                    <div class="employment-grid-col -right">
-                                        <div class="employment-title">Como posso ajudá-lo?</div>
-                                        <div class="employment-text">
-                                            <p>Forneço tudo o que sua empresa precisa para um projeto digital. Eu
-                                                desenvolvo e faço o design de sites, posso editar seu vídeo ou anúncio,
-                                                fazer seu logotipo, banner, tudo que você precisa é só me dizer o que
-                                                você
-                                                quer
-                                            </p>
-                                        </div>
-                                        <div class="employment-action"><a class="btn btn_more" href="./contact.html"
-                                                data-magnetic><span class="btn_more-title"><span
-                                                        data-text="Contate-me">Contate-me</span></span><span
-                                                    class="btn_more-ripple"><span></span></span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- ======== PROJECTS======== -->
-                <!--                 
-                <section class="smfeed">
-                    <div class="smfeed-content -st -rb">
-                        <div class="smfeed-container">
-                            <div class="smfeed-header">
-                                <h2>Ultimos –<br>projetos</h2>
-                            </div>
-                            <div class="smfeed-carousel" data-cursor-text="← Arraste →">
-                                <div class="smfeed-items">
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://dribbble.com/shots/17632332-RodGrossi-ReDesign" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/projects.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">Food App with Flutter</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                    <a class="smfeed-item -dribbble"
-                                        href="https://play.unity.com/mg/other/big-boy-jumping" target="_blank"
-                                        rel="noopener"><span class="smfeed-item-img">
-                                            <img src="assets/img/_main/bigboy.jpg" loading="lazy" alt
-                                                data-lazy-force></span><span class="smfeed-item-url">
-                                            <svg class="svgsprite -dribbble">
-                                                <use xlink:href="./assets/img/_main/sprites/svgsprites.svg?2#dribbble">
-                                                </use>
-                                            </svg>thomazgg</span>
-                                        <span class="smfeed-item-text">2D Platform Game with Unity</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> 
-                -->
-                <!-- ======== OUTRO ======== -->
-                <section class="outro">
-                    <div class="outro-content" data-cursor="-inverse">
-                        <div class="outro-body">
-                            <div class="outro-container">
-                                <div class="outro-header">
-                                    <h2>Vamos construir seu projeto juntos.</h2><a href="./contact.html"
-                                        data-cursor="-opaque">O que tem em mente?</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="outro-footer">
-                            <div class="outro-container">
-                                <div class="outro-grid">
-                                    <div class="outro-grid-col -left">
-                                        <div class="outro-mail"><a href="mailto:uthomaz7@gmail.com"
-                                                data-cursor="-opaque"><em><span>uthomaz7@gmail.com</span></em></a></div>
-                                        <div class="outro-copy">
-                                            <address>
-                                                <p>Thomaz © 2022. Todos os direitos reservados.</p>
-                                            </address>
-                                        </div>
-                                        <div class="outro-link"><a class="outro-link-item" href="./privacy.html"
-                                                data-cursor="-opaque">Política de Privacidade</a></div>
-                                    </div>
-                                    <div class="outro-grid-col -right">
-                                        <div class="outro-social">
-                                            <div class="outro-social-row">
-                                                <a class="outro-social-item" href="https://github.com/thomazgg"
-                                                    target="_blank" rel="noopener" aria-label="GitHub">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="GitHub">GitHub</span>
-                                                    </span>
-                                                    <i class="fab fa-github"></i>
-                                                </a>
-                                                <a class="outro-social-item" href="https://www.behance.net/uthomaz"
-                                                    target="_blank" rel="noopener" aria-label="Behance">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="Behance">Behance</span>
-                                                    </span>
-                                                    <i class="fab fa-behance"></i>
-                                                </a>
-                                                <a class="outro-social-item" href="https://discord.gg/DJuK4KGa94"
-                                                    target="_blank" rel="noopener" aria-label="Discord">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="Discord">Discord</span>
-                                                    </span>
-                                                    <i class="fab fa-discord"></i>
-                                                </a>
-                                            </div>
-                                            <div class="outro-social-row">
-                                                <a class="outro-social-item" href="https://instagram.com/uthomaz"
-                                                    target="_blank" rel="noopener" aria-label="Instagram">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="Instagram">Instagram</span>
-                                                    </span>
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                                <a class="outro-social-item" href="https://twitch.tv/uthomaz"
-                                                    target="_blank" rel="noopener" aria-label="Twitch">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="Twitch">Twitch</span></span>
-                                                    <i class="fab fa-twitch"></i>
-                                                </a>
-                                                <a class="outro-social-item" href="https://youtube.com/c/uthomaz"
-                                                    target="_blank" rel="noopener" aria-label="YouTube">
-                                                    <span class="outro-social-item-title">
-                                                        <span data-text="YouTube">YouTube</span>
-                                                    </span>
-                                                    <i class="fab fa-youtube"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- ======== JS ======== -->
-        <section>
-            <!-- Index JS file -->
-            <script src="./assets/js/bundle.js" defer></script>
-            <script src="./assets/js/index.js" defer></script>
+    </nav>
+    <section class="menu-overlay" style="height: 0;">
+        <!-- svg overlay -->
+        <div class="overlay">
+            <svg viewBox="0 0 1000 1000">
+                <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+            </svg>
+        </div>
+        <!-- menu items -->
+        <div class="menu">
+            <div class="primary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./index.html"><span>I</span>Home</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./about.html"><span>II</span>About</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>III</span>Projects</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
 
-            <noscript>
-                Parabéns Viajante do Tempo, você está nos anos 90. Agora, para acessar este site, você precisa
-                atualize seu navegador ou habilite o Javascript nas configurações. E por favor não use o Internet
-                Explorer :).
-            </noscript>
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>IV</span>Contact</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="secondary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./projects.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>My Works</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./case_studies.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Case Studies</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./gallery.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Gallery</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+    
+                    <div class="wrapper2">
+                        <div class="menu-item">
+                            <a href="./contact.html" target="_self" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    Contact me
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </section>
+            <div class="social-links">
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://github.com/thomazgg" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/github.svg" width="20" height="20" alt="Github">
+                            <span class="button-tooltip">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/uthomaz/" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/linkedin.svg" width="20" height="20" alt="Linkedin">
+                            <span class="button-tooltip">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/behance.svg" width="20" height="20" alt="Behance">
+                            <span class="button-tooltip">Behance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/dribble.svg" width="20" height="20" alt="Dribble">
+                            <span class="button-tooltip">Dribble</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/invite/DJuK4KGa94" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/discord.svg" width="20" height="20" alt="Discord">
+                            <span class="button-tooltip">Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/link.svg" width="20" height="20" alt="Linktree">
+                            <span class="button-tooltip">Linktree</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
 
-    </body>
+<main>
+    <section class="section section-hero-home">
+        <div class="container hero-header">
+            <!---->
+            <div class="h-0 d-flex circle-wrapper justify-content-center align-items-center" >
+                <h2 class="headline-font text-center should-animate d-inline-block position-relative headline-row display-3"  style="opacity: 1;">
+                    <span class="headline-text-row position-relative p-1 display-3 headline-text-row--0" data-cursor="-opaque">Welcome to the</span>
+                </h2>
+            </div>
+            <!---->
+            <div class="h-1 d-flex circle-wrapper justify-content-center align-items-center">
+                <h2   data-fromy="50"  class="headline-font text-center should-animate d-inline-block position-relative headline-row display-3" style="opacity: 1;">
+                    <span  class="headline-text-row position-relative p-1 display-3 headline-text-row--1">portfolio</span>
+                </h2>
+            </div>
+            <!---->
+            <div class=" d-flex circle-wrapper justify-content-center align-items-center" >
+                <h2 class="h-2 headline-font text-center should-animate d-inline-block position-relative headline-row display-3"  style="opacity: 1;">
+                    <span class="headline-text-row position-relative p-1 display-3 headline-text-row--2">of</span>
+                    <svg viewBox="0 0 320 320" class="circle-svg position-absolute center d-none d-md-block" >
+                        <circle class="h-3" cx="160" cy="160" r="100" stroke="#fff" fill="none" stroke-width="1" stroke-linecap="round" style="stroke-dashoffset: 0; stroke-dasharray: none;"></circle>
+                    </svg>
+                </h2>
+                <div id="caption-wrapper" class="h-3 d-none d-md-flex pl-xl-3 ml-xl-1 py-1 py-lg-0 align-items-center justify-content-center pl-1 pl-md-2 should-animate position-relative"  style="opacity: 1;">
+                    <p class="h-4 h1 light color-white-opacity" >(</p>
+                    <p class="h-4 caption px-7 px-xlg-2 kobe-web ls-19 text-center lh-11" >Driven by an exciting passion for the fusion between art and minimalist design.</p>
+                    <p class="h-4 h1 light color-white-opacity" >)</p> 
+                    <img src="./assets/img/_main/sprites/arrow-up.svg" alt="icon" class="arrow arrow-up should-animate" style="opacity: 1;">
+                </div>
+            </div>
+            <!---->
+            <img src="./assets/img/_main/sprites/signature.svg" alt="icon" class="signature position-absolute" style="opacity: 1;">
+            <div class="h-5 d-flex circle-wrapper justify-content-center align-items-center" >
+                <h2  class="headline-font text-center should-animate d-inline-block position-relative headline-row display-2"  style="opacity: 1;">
+                    <span class="headline-text-row position-relative p-1 display-2 headline-text-row--3" >thomaz</span>
+                </h2>
+            </div>
+            <!---->
+            <div class="h-6 d-flex circle-wrapper justify-content-center align-items-center" >
+                <div  class="parallax-wrapper large-text-wrapper should-animate not-wrapped position-absolute" data-v-6531f2c0="" style="opacity: 1;">
+                    <div class="parallax text-center" style="top: 0px; transform: translate3d(0px, 0px, 0px);">
+                        <h2 class="large-text color-pink bold-font d-inline-block">Art.</h2>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div  class="position-relative on-top mt-md-4 should-animate" style="opacity: 1;">
+                <div class="d-flex justify-content-center " >
+                    <h3 class="h-7" >Web Developer</h3>
+                    <h3 class="h-8 headline-font px-7 px-md-1">&amp;</h3>
+                    <h3 class="h-9 ">UI UX Designer</h3>
+                </div>
+            </div>
+            <!---->
+            <div class="-container">
+                <div class="floating-icons">
+                    <a href="https://dribbble.com/uthomaz" target="_blank" rel="noreferrer" class="dribbble">
+                        <span><img src="./assets/img/_main/sprites/dribbble.svg" alt="dribbble"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/uthomaz" target="_blank" rel="noreferrer" class="linkedin">
+                        <span><img src="./assets/img/_main/sprites/linkedin.svg" alt="linkedin"></span>
+                    </a>
+                    <a href="https://www.behance.net/uthomaz" target="_blank" rel="noreferrer" class="behance">
+                        <span><img src="./assets/img/_main/sprites/behance.svg" alt="behance"></span>
+                    </a>
+                </div>
+            </div>
+            <!---->
+            <div class="arrow" style="bottom: 7rem;">
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-0 overflow-hidden">
+        <div class="container">
+            <div class="leave-an-impression-section">
+                <h3 class="heading">
+                    <span class="stroke-text">Why</span> me?
+                </h3>
+                <div class="grid grid-3-desktop">
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/home/responsive.svg" width="152" height="100" alt="Immersive">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Responsive Websites</h6>
+                            <p class="paragraph">Crafting websites that adapt seamlessly to any device, ensuring a flawless user experience.</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="./projects.html" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    Explore My Work
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/home/intuitive.svg" width="152" height="100" alt="Brand on the brain">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Intuitive Interfaces</h6>
+                            <p class="paragraph">Designing user-friendly interfaces that engage your audience and drive conversions.</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="./case_studies.html" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    See My Studie Cases
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/home/creative.svg" width="152" height="100" alt="Lasting impact">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Creative Design</h6>
+                            <p class="paragraph">Elevate your brand with captivating, custom designs that leave a lasting impression.</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="./gallery.html" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    Browse My Gallery
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-0 overflow-hidden">
+        <div class="featured-cases-section">
+            <div class="container">
+                <div class="shared-heading">
+                    <h2 class="heading"><span class="stroke">Projects &</span><br>Case Studies</h2>
+                </div>
+            </div>
+            <div class="featured-cases-module">
+                <div class="featured-cases-track">
 
-</html>
+                    <div class="featured-case">
+                        <a href="zgowiecre.com" class="thumb">
+                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/zgowie.jpg 1x, ./assets/img/projects/zgowie.jpg 2x" data-lowsrc="./assets/img/projects/zgowie.jpg" data-sizes="auto">
+                        </a>
+                        <div class="caption">
+                            <div class="caption-grid">
+                                <a href="zgowiecre.com">
+                                    <h6 class="title">Official website of zgowie</h6>
+                                </a>
+                                <a href="zgowiecre.com">
+                                    <p class="location">
+                                        zgowie.com
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-case">
+                        <a href="6" class="thumb">
+                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/bgs-case-study.png 1x, ./assets/img/projects/bgs-case-study.png 2x" data-lowsrc="./assets/img/projects/bgs-case-study.png" data-sizes="auto">
+                        </a>
+                        <div class="caption">
+                            <div class="caption-grid">
+                                <a href="6">
+                                    <h6 class="title">BGS - Redesign</h6>
+                                </a>
+                                <a href="6">
+                                    <p class="location">
+                                        UI & UX Case Study
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-case">
+                        <a href="5" class="thumb">
+                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/steam-redesign.png 1x, ./assets/img/projects/steam-redesign.png 2x" data-lowsrc="./assets/img/projects/steam-redesign.png" data-sizes="auto">
+                        </a>
+                        <div class="caption">
+                            <div class="caption-grid">
+                                <a href="5">
+                                    <h6 class="title">Steam - Redesign</h6>
+                                </a>
+                                <a href="5">
+                                    <p class="location">
+                                        UI & UX Redesign
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-case">
+                        <a href="6" class="thumb">
+                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/spotify-but-better.png 1x, ./assets/img/projects/spotify-but-better.png 2x" data-lowsrc="./assets/img/projects/spotify-but-better.png" data-sizes="auto">
+                        </a>
+                        <div class="caption">
+                            <div class="caption-grid">
+                                <a href="6">
+                                    <h6 class="title">Spotify-But-Better</h6>
+                                </a>
+                                <a href="6">
+                                    <p class="location">
+                                        UI & UX Redesign
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-case">
+                        <a href="2" class="thumb">
+                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/rodgrossi-redesign.png 1x, ./assets/img/projects/rodgrossi-redesign.png 2x" data-lowsrc="./assets/img/projects/rodgrossi-redesign.png" data-sizes="auto">
+                        </a>
+                        <div class="caption">
+                            <div class="caption-grid">
+                                <a href="2">
+                                    <h6 class="title">Rodgrossi - Redesign</h6>
+                                </a>
+                                <a href="2">
+                                    <p class="location">
+                                        UI & UX Redesign
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section overflow-hidden">
+        <div class="container">
+            <div class="why-us-section">
+                <div class="content">
+                    <div class="avatars">
+                        <div class="avatar img1 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker1.png 1x, ./assets/img/home/sticker1.png 2x" data-lowsrc="./assets/img/home/sticker1.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker1.png 1x, ./assets/img/home/sticker1.png 2x">
+                        </div>
+                        <div class="avatar img2 lazyloaded" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="./assets/img/home/sticker2.png 1x, ./assets/img/home/sticker2.png 2x" data-lowsrc="./assets/img/home/sticker2.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker2.png 1x, ./assets/img/home/sticker2.png 2x">
+                        </div>
+                        <div class="avatar img3 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker3.png 1x, ./assets/img/home/sticker3.png 2x" data-lowsrc="./assets/img/home/sticker3.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker3.png 1x, ./assets/img/home/sticker3.png 2x">
+                        </div>
+                        <div class="avatar img4 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker4.png 1x, ./assets/img/home/sticker4.png 2x" data-lowsrc="./assets/img/home/sticker4.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker4.png 1x, ./assets/img/home/sticker4.png 2x">
+                        </div>
+                    </div>
+                    <h2 class="heading">Looking for<br>a Fresh Design?</h2>
+                    <p class="paragraph">I provide all your digital project needs, from websites to video editing, logos, banners, and more. Tell me what you want, and I'm ready to help.</p>
+                    <a href="https://familyindustrieslive.com/about-us/" target="_self" class="btn btn-lg btn-white">
+                        <div class="btn-bg"></div>
+                        <div class="btn-text">
+                            Contact Me
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="section pt-0 overflow-hidden">
+        <div class="the-bridge-section">
+            <div class="container">
+                <div class="bridge-layout">
+                    <div class="content">
+                        <h2 class="heading">
+                            <span>Design</span>
+                            <span>Create &amp;</span>
+                            <span>Innovate. </span>
+                        </h2>
+                        <p class="paragraph">Enter my world, where <span class="text-neon-green">DESIGN  </span>is my canvas, <span class="text-violet">CREATIVITY </span>is my driving force, and  <span class="text-teal">UNIQUENESS  </span>is my hallmark. Explore the artistry of my custom web design work, where every website tells a unique story.</p>
+                        <div class="buttons">
+                            <a href="./contact.html" target="_self" class="btn btn-lg btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">Contact me
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="video">
+                            <video class="lazyload" muted="" loop="" autoplay="" reload="none">
+                                <source src="./assets/vid/gato.webm" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="section pt-0 overflow-hidden">
+        <div class="container">
+            <a href="./contact.html" class="interactive-cta" data-hover-parent="">
+                <div class="row">
+                    <div class="text">Crafting</div>
+                    <div class="action bg-yellow">
+                        <div class="inner">
+                            <div class="loop" data-reverse="true" data-speed="4" data-hover="true">
+                                <div class="loop-track" style="transform: translate(1.9997%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9997%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9997%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9996%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9995%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9995%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9995%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9995%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9994%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9994%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9993%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9993%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9992%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9991%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.999%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9989%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9988%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9986%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9983%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9979%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9971%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9957%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(1.9915%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(-2899.43%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="loop-content">
+                                        <div class="content">
+                                            <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">Exceptional</div>
+                </div>
+                <div class="row">
+                    <div class="text">UI/UX</div>
+                    <div class="text"><span class="design">Design</span></div>
+                    <div class="image">
+                        <img alt="" width="135" height="90" class="lazyload" data-srcset="./assets/img/_main/img1.jpg 1x, ./assets/img/_main/img1.jpg 2x" data-lowsrc="./assets/img/_main/img1.jpg" data-sizes="auto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <img alt="" width="338" height="90" class="lazyload" data-srcset="./assets/img/_main/img2.jpg 1x, ./assets/img/_main/img2.jpg 2x" data-lowsrc="./assets/img/_main/img2.jpg" data-sizes="auto">
+                    </div>
+                    <div class="text">and Development</div>
+                </div>
+                <div class="row">
+                    <div class="text"><span class="date">Since 2020</span></div>
+                    <div class="action bg-violet">
+                        <div class="inner">
+                            <div class="loop" data-reverse="true" data-speed="4" data-hover="true">
+                                <div class="loop-track" style="transform: translate(0.4489%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.4489%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.4495%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.4497%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.4486%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.45%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(0.4513%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="loop-track" style="transform: translate(-799.972%, 0%) translate3d(0px, 0px, 0px);">
+                                    <div class="content">
+                                        <div>Contact me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section> -->
+    <!-- <section class="section pt-0 overflow-hidden mb-1">
+        <div class="container">
+            <div class="shared-heading">
+                <h2 class="heading">What’s<br> <span class="stroke">Trending</span></h2>
+            </div>
+            <div class="grid grid-3-desktop">
+                <div class="blog-post">
+                    <a href="#1" class="thumb">
+                    <img alt="Carousel" width="440" height="440" class="lazyload" data-srcset="./assets/img/home/post1.jpg 1x, ./assets/img/home/post1.jpg 2x" data-lowsrc="./assets/img/home/post1.jpg" data-sizes="auto">
+                    </a>
+                    <div class="content">
+                        <div class="category">
+                            Categoria, categoria, categoria
+                        </div>
+                        <h6 class="title"><a href="#1">Text text: text text text text text text text text text</a></h6>
+                        <div class="date">Oct 30, 2023</div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#1" class="btn btn-sm btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">
+                                Read more
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <a href="#2" class="thumb">
+                    <img alt="Carousel" width="440" height="440" class="lazyload" data-srcset="./assets/img/home/post2.jpg 1x, ./assets/img/home/post2.jpg 2x" data-lowsrc="./assets/img/home/post2.jpg" data-sizes="auto">
+                    </a>
+                    <div class="content">
+                        <div class="category">
+                            Categoria, categoria, categoria
+                        </div>
+                        <h6 class="title"><a href="#2">Text text: text text text text text text text text text</a></h6>
+                        <div class="date">Oct 30, 2023</div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#2" class="btn btn-sm btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">
+                                Read more
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <a href="#3" class="thumb">
+                    <img alt="Carousel" width="440" height="440" class="lazyload" data-srcset="./assets/img/home/post3.jpg 1x, ./assets/img/home/post3.jpg 2x" data-lowsrc="./assets/img/home/post3.jpg" data-sizes="auto">
+                    </a>
+                    <div class="content">
+                        <div class="category">
+                            Categoria, categoria, categoria
+                        </div>
+                        <h6 class="title"><a href="#3">Text text: text text text text text text text text text</a></h6>
+                        <div class="date">Oct 30, 2023</div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#3" class="btn btn-sm btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">
+                                Read more
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="section pt-0 pb-0 overflow-hidden">
+        <div class="container">
+            <div class="call-to-action">
+                <a href="./about.html" class="block join-us">
+                    <div class="thumb">
+                        <img alt="Google event live embroidery" width="600" height="600" class="lazyload" data-srcset="./assets/img/_main/about_me.jpg 1x, ./assets/img/_main/about_me.jpg 2x" data-lowsrc="./assets/img/_main/about_me.jpg" data-sizes="auto">
+                    </div>
+                    <div class="ribbon">
+                        <div class="loop" data-speed="4">
+                            <div class="loop-track" style="transform: translate(-0.2362%, 0%) translate3d(0px, 0px, 0px);">
+                                <div class="loop-content">
+                                    <div class="text">
+                                        <div>Section</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        <div>About me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loop-track" style="transform: translate(-0.2361%, 0%) translate3d(0px, 0px, 0px);">
+                                <div class="loop-content">
+                                    <div class="text">
+                                        <div>Section</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        <div>About me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loop-track" style="transform: translate(-0.2363%, 0%) translate3d(0px, 0px, 0px);">
+                                <div class="loop-content">
+                                    <div class="text">
+                                        <div>Section</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        <div>About me</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./projects.html" class="block case-studies">
+                    <div class="thumb">
+                        <img alt="xBox event merch screen printing" width="600" height="600" class="lazyload" data-srcset="./assets/img/_main/projects.jpg 1x, ./assets/img/_main/projects.jpg 2x" data-lowsrc="./assets/img/_main/projects.jpg" data-sizes="auto">
+                    </div>
+                    <div class="ribbon">
+                        <div class="loop" data-reverse="true" data-speed="4">
+                            <div class="loop-track" style="transform: translate(0.1429%, 0%) translate3d(0px, 0px, 0px);">
+                                <div class="loop-content">
+                                    <div class="text">
+                                        <div>Section</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        <div>Projects</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loop-track" style="transform: translate(-199.959%, 0%) translate3d(0px, 0px, 0px);">
+                                <div class="loop-content">
+                                    <div class="text">
+                                        <div>Section</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                        <div>Projects</div>
+                                        <div><img src="./assets/img/_main/arrow.svg" alt="arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="footer-container"></div>
+
+<script>
+    loadContent("footer-container", "./content/footer.html");
+</script>
+
+<!-- ======== JS ======== -->
+
+<section>
+    <script type="text/javascript" src="./assets/js/index.js" defer=""></script>
+    <script type="text/javascript" src="./assets/js/paths.bundle.js.download" id="paths-js"></script>
+    <script type="text/javascript" src="./assets/js/gsap-core.bundle.js.download" id="gsap-core-js"></script>
+    <script type="text/javascript" src="./assets/js/CSSPlugin.bundle.js.download" id="css-plug-js"></script>
+    <script type="text/javascript" src="./assets/js/global.bundle.js.download" id="global-js-js"></script>
+    <!-- ==== MENU OVERLAY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
+    <script>
+        // Setup
+        const tl = gsap.timeline({ paused: true });
+        const path = document.querySelector("path");
+        const transitionElement = document.querySelector(".menu-overlay .menu");
+    
+        gsap.set(".menu", { visibility: "hidden" });
+    
+        // Toggle Menu
+        function revealMenu() {
+            revealMenuItems();
+    
+            const hamburger = document.getElementById("hamburger");
+            const toggleBtn = document.getElementById("toggle-btn");
+    
+            toggleBtn.addEventListener("click", function () {
+                hamburger.classList.toggle("active");
+
+                // Se a animação está reversa
+                if (tl.reversed()) {
+                    // Reproduz a animação
+                    tl.play();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                } 
+                // Se a animação não está reversa
+                else { 
+                    // Reverte a animação
+                    tl.reverse();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                }
+            });
+        }
+    
+        revealMenu();
+    
+        function revealMenuItems() {
+
+            // Adiciona a classe transition quando a animação está completa
+            tl.eventCallback("onComplete", function () {
+                transitionElement.classList.add("transition");
+            });
+            
+            // Define start and end SVG paths
+            const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+            const end = "M0, 1005S175, 995, 500, 995s500, 5, 500, 5V0H0Z";
+    
+            // Easing functions
+            const power2 = "power2.inOut";
+            const power4 = "power4.inOut";
+    
+            // Timeline animations
+            tl.to("#hamburger", 1.25, {
+                marginTop: "-5px",
+                x: -40,
+                y: 40,
+                ease: power4,
+            });
+    
+            tl.to(".btn .btn-outline", 1.25, {
+                x: -40,
+                y: 40,
+                width: "140px",
+                height: "140px",
+                border: "1px solid #e2e2dc",
+                ease: power4,
+            }, "<");
+    
+            tl.to(path, 0.8, {
+                attr: {
+                    d: end,
+                },
+                ease: Power2.easeOut,
+            }, "<").to(path, 0.8, {
+                attr: {
+                    d: start,
+                },
+                ease: Power2.easeIn,
+            }, "-0.8");
+            
+    
+            tl.to(".menu", 1, {
+                visibility: "visible",
+            }, "-=0.5");
+    
+            tl.to(".menu-item > a", 1, {
+                top: 0,
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.5,
+                },
+            }, "-=1").reverse();
+
+            tl.to(".social-links li", 0, {
+                opacity: 0,
+                transform: "translateY(200px)", // Posição inicial
+            }, "<");
+
+            tl.to(".social-links li", 1, {
+                opacity: 1,
+                transform: "translateY(0)", // Posição final
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.2, // Atraso entre cada item
+                },
+            }, "-=1");
+        }
+    </script>    
+</section>
+
+<noscript>
+    Parabéns Viajante do Tempo, você está nos anos 90. Agora, para acessar este site, você precisa
+    atualizar seu navegador ou habilitar o Javascript nas configurações. E por favor não use o Internet
+    Explorer :).
+</noscript>
+
+</body></html>

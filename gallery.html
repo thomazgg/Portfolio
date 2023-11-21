@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+    <title>Thomaz ⇀ Projects</title>
+
+    <!--  
+    ================= 
+        
+    author: Joao Thomaz 
+    email: uthomaz7@gmail.com 
+    website: https://thomazgg.github.io/Portfolio/ 
+
+    ================= 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Olá, me chamo Thomaz — UX/UI Designer, Brasil. Tenho paixão por criar experiências de que sejam perfeitas, significativas e impactantes.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- social-meta-tags -->
+
+    <meta property="og:site_name" content="Thomaz's Portfolio">
+    <meta property="og:url" content="uthomaz.com">
+    <meta property="og:title" content="Thomaz's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Portfolio">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thomaz's Portfolio">
+    <meta name="twitter:description" content="Portfolio">
+
+    <link rel="shortcut icon" href="./assets/img/sprites/control.png">
+
+    <!-- css assets -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" id="global-style-css" href="./assets/css/style.css" type="text/css" media="all">
+
+    <!-- scripts -->
+    
+    <script type="text/javascript" src="./assets/js/loadContent.js"></script>
+
+</head>
+<body>
+
+<header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt="thomaz">
+                </a>
+                <button type="button" class="navbar-menu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+            <div class="navbar-menu" data-lenis-prevent="">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" target="_self" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" target="_self" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="dd">Projects</a>
+                        <div class="dd-nav">
+                            <div class="dd-content">
+                                <ul class="dd-list">
+                                    <li class="dd-item">
+                                        <a href="./projects.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">My Works</h6>
+                                                <p class="dd-paragraph">Explore completed web and content creation projects.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dd-item">
+                                        <a href="./case_studies.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Case Studies</h6>
+                                                <p class="dd-paragraph">Detailed project insights, challenges, and results.</p>
+                                            </div>
+                                        </a>
+                                    </li>                                    <li class="dd-item">
+                                        <a href="./gallery.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Gallery</h6>
+                                                <p class="dd-paragraph">Visual showcase of projects with aesthetic excellence.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" target="_self" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="./contact.html" target="_self" class="btn btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Contact me</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-actions">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- toggle button -->
+                        <div class="btn" id="toggle-btn">
+                            <div class="btn-outline btn-outline-1"></div>
+                            <div class="btn-outline btn-outline-2"></div>
+                            <div id="hamburger">
+                            <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="menu-overlay" style="height: 0;">
+        <!-- svg overlay -->
+        <div class="overlay">
+            <svg viewBox="0 0 1000 1000">
+                <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+            </svg>
+        </div>
+        <!-- menu items -->
+        <div class="menu">
+            <div class="primary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./index.html"><span>I</span>Home</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./about.html"><span>II</span>About</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>III</span>Projects</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>IV</span>Contact</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="secondary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./projects.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>My Works</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./case_studies.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Case Studies</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./gallery.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Gallery</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+    
+                    <div class="wrapper2">
+                        <div class="menu-item">
+                            <a href="./contact.html" target="_self" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    Contact me
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://github.com/thomazgg" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/github.svg" width="20" height="20" alt="Github">
+                            <span class="button-tooltip">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/uthomaz/" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/linkedin.svg" width="20" height="20" alt="Linkedin">
+                            <span class="button-tooltip">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/behance.svg" width="20" height="20" alt="Behance">
+                            <span class="button-tooltip">Behance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/dribble.svg" width="20" height="20" alt="Dribble">
+                            <span class="button-tooltip">Dribble</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/invite/DJuK4KGa94" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/discord.svg" width="20" height="20" alt="Discord">
+                            <span class="button-tooltip">Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/link.svg" width="20" height="20" alt="Linktree">
+                            <span class="button-tooltip">Linktree</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- sec-nav -->
+    <div class="sec_nav">
+        <div class="content">
+            <div class="sec_nav-items">
+            <div class="sec_nav-item">
+                <a href="./projects.html">My Works</a>
+            </div>
+            <div class="sec_nav-item">
+                <a href="./case_studies.html">Case Studies</a>
+            </div>
+            <div class="sec_nav-item active">
+                <a href="./gallery.html">Gallery</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- 
+    <section class="section shared-hero">
+        <div class="container">
+            <div class="shared-hero-content shared-hero-center">
+                <h1 class="heading"><span>Image</span> Gallery</h1>
+                <p class="paragraph mt-1">Visual showcase of projects with aesthetic excellence.</p>
+            </div>
+        </div>
+    </section> 
+    -->
+    <!-- 
+    <section class="section overflow-hidden pt-0">
+        <div class="wrapp">
+            <ul class="gallery">
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/bgs-case-study.png">
+                    <img src="./assets/img/projects/bgs-case-study.png" alt="1" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/chinafood.jpg">
+                    <img src="./assets/img/projects/chinafood.jpg" alt="2" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/coffeshop.jpg">
+                    <img src="./assets/img/projects/coffeshop.jpg" alt="3" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/gama-redesign.jpg">
+                    <img src="./assets/img/projects/gama-redesign.jpg" alt="4" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/mobile-app-kabum-2.jpg">
+                    <img src="./assets/img/projects/mobile-app-kabum-2.jpg" alt="5" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/rodgrossi-redesign.png">
+                    <img src="./assets/img/projects/rodgrossi-redesign.png" alt="6" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/spotify-but-better.png">
+                    <img src="./assets/img/projects/spotify-but-better.png" alt="7" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/steam-redesign.png">
+                    <img src="./assets/img/projects/steam-redesign.png" alt="8" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+                <li class="gallery__item" data-fancybox="gallery" data-src="./assets/img/projects/zgowie.jpg">
+                    <img src="./assets/img/projects/zgowie.jpg" alt="9" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    -->
+    
+    <div class="slider">
+        <div class="content">
+          <div class="slider-wrapper">
+            <div class="slider-item">
+              <figure data-fancybox="gallery" data-src="./assets/img/projects/bgs-case-study.png">
+                <img src="./assets/img/projects/bgs-case-study.png" alt="1" class="gallery__img">
+                <span class="zoom">zoom</span>
+              </figure>
+            </div>
+  
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/chinafood.jpg">
+                    <img src="./assets/img/projects/chinafood.jpg" alt="2" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+  
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/coffeshop.jpg">
+                    <img src="./assets/img/projects/coffeshop.jpg" alt="3" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+  
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/gama-redesign.jpg">
+                    <img src="./assets/img/projects/gama-redesign.jpg" alt="4" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+  
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/mobile-app-kabum-2.jpg">
+                    <img src="./assets/img/projects/mobile-app-kabum-2.jpg" alt="5" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+  
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/rodgrossi-redesign.png">
+                    <img src="./assets/img/projects/rodgrossi-redesign.png" alt="6" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/spotify-but-better.png">
+                    <img src="./assets/img/projects/spotify-but-better.png" alt="7" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/steam-redesign.png">
+                    <img src="./assets/img/projects/steam-redesign.png" alt="8" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+
+            <div class="slider-item">
+                <figure data-fancybox="gallery" data-src="./assets/img/projects/zgowie.jpg">
+                    <img src="./assets/img/projects/zgowie.jpg" alt="9" class="gallery__img">
+                    <span class="zoom">zoom</span>
+                  </figure>
+            </div>
+          </div>
+          <div class="slider-progress">
+            <div class="slider-progress-bar"></div>
+          </div>
+        </div>
+    </div>
+</main>
+
+
+<!-- <div id="footer-container"></div> -->
+
+<script>
+    loadContent("footer-container", "./content/footer.html");
+</script>
+
+
+<!-- ======== JS ======== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        dragToClose: false,
+
+        closeButton: "top",
+
+        Image: {
+            zoom: false,
+        },
+
+        on: {
+            initCarousel: (fancybox) => {
+                const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
+            "Carousel.change": (fancybox, carousel, to, from) => {
+                const slide = carousel.slides[to];
+
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
+        },
+    });
+</script>
+<script>
+    const lerp = (f0, f1, t) => (1 - t) * f0 + t * f1;
+    const clamp = (val, min, max) => Math.max(min, Math.min(val, max));
+
+    class DragScroll {
+        constructor(obj) {
+        this.el = document.querySelector(obj.el);
+        this.wrap = this.el.querySelector(obj.wrap);
+        this.items = this.el.querySelectorAll(obj.item);
+        this.bar = this.el.querySelector(obj.bar);
+        this.init();
+      }
+
+        init() {
+            this.progress = 0;
+            this.speed = 0;
+            this.oldX = 0;
+            this.x = 0;
+            this.playrate = 0;
+
+            this.bindings();
+            this.events();
+            this.calculate();
+            this.raf();
+        }
+
+        bindings() {
+            [
+                "events",
+                "calculate",
+                "raf",
+                "handleWheel",
+                "move",
+                "raf",
+                "handleTouchStart",
+                "handleTouchMove",
+                "handleTouchEnd",
+            ].forEach((method) => {
+                this[method] = this[method].bind(this);
+            });
+        }
+
+        calculate() {
+            this.progress = 0;
+            this.wrapWidth = this.items[0].clientWidth * this.items.length;
+            this.wrap.style.width = `${this.wrapWidth}px`;
+            this.maxScroll = this.wrapWidth - this.el.clientWidth;
+        }
+
+        handleWheel(e) {
+            e.preventDefault(); // Impede o scroll vertical padrão
+            this.progress += e.deltaY;
+            this.move();
+        }
+
+        handleTouchStart(e) {
+            e.preventDefault();
+            this.dragging = true;
+            this.startX = e.clientX || e.touches[0].clientX;
+            this.el.classList.add("dragging");
+        }
+
+        handleTouchMove(e) {
+            if (!this.dragging) return false;
+            const x = e.clientX || e.touches[0].clientX;
+            this.progress += (this.startX - x) * 2.5;
+            this.startX = x;
+            this.move();
+        }
+
+        handleTouchEnd() {
+            this.dragging = false;
+            this.el.classList.remove("dragging");
+        }
+
+        move() {
+            this.progress = clamp(this.progress, 0, this.maxScroll);
+        }
+
+        events() {
+            window.addEventListener("resize", this.calculate);
+            window.addEventListener("wheel", this.handleWheel);
+
+            this.el.addEventListener("touchstart", this.handleTouchStart);
+            window.addEventListener("touchmove", this.handleTouchMove);
+            window.addEventListener("touchend", this.handleTouchEnd);
+
+            window.addEventListener("mousedown", this.handleTouchStart);
+            window.addEventListener("mousemove", this.handleTouchMove);
+            window.addEventListener("mouseup", this.handleTouchEnd);
+            document.body.addEventListener("mouseleave", this.handleTouchEnd);
+        }
+
+        raf() {
+            this.x = lerp(this.x, this.progress, 0.1);
+            this.playrate = this.x / this.maxScroll;
+
+            this.wrap.style.transform = `translateX(${-this.x}px)`;
+            this.bar.style.transform = `scaleX(${0.18 + this.playrate * 0.82})`;
+
+            this.speed = Math.min(100, this.oldX - this.x);
+            this.oldX = this.x;
+
+            this.scale = lerp(this.scale, this.speed, 0.1);
+            this.items.forEach((item) => {
+            item.style.transform = `scale(${1 - Math.abs(this.speed) * 0.005})`;
+            item.querySelector("img").style.transform = `scaleX(${
+                1 + Math.abs(this.speed) * 0.004
+            })`;
+        });
+      }
+    }
+
+    const scroll = new DragScroll({
+        el: ".slider",
+        wrap: ".slider-wrapper",
+        item: ".slider-item",
+        bar: ".slider-progress-bar",
+    });
+
+    const animateScroll = () => {
+        requestAnimationFrame(animateScroll);
+        scroll.raf();
+    };
+
+    // Impede o scroll vertical na página inteira enquanto o script está ativo
+    document.body.style.overflow = 'hidden';
+
+    animateScroll();
+</script>
+
+<section>
+    <script type="text/javascript" src="./assets/js/paths.bundle.js.download" id="paths-js"></script>
+    <script type="text/javascript" src="./assets/js/gsap-core.bundle.js.download" id="gsap-core-js"></script>
+    <script type="text/javascript" src="./assets/js/CSSPlugin.bundle.js.download" id="css-plug-js"></script>
+    <script type="text/javascript" src="./assets/js/global.bundle.js.download" id="global-js-js"></script>
+    <!-- ==== MENU OVERLAY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
+    <script>
+        // Setup
+        const tl = gsap.timeline({ paused: true });
+        const path = document.querySelector("path");
+        const transitionElement = document.querySelector(".menu-overlay .menu");
+    
+        gsap.set(".menu", { visibility: "hidden" });
+    
+        // Toggle Menu
+        function revealMenu() {
+            revealMenuItems();
+    
+            const hamburger = document.getElementById("hamburger");
+            const toggleBtn = document.getElementById("toggle-btn");
+    
+            toggleBtn.addEventListener("click", function () {
+                hamburger.classList.toggle("active");
+
+                // Se a animação está reversa
+                if (tl.reversed()) {
+                    // Reproduz a animação
+                    tl.play();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                } 
+                // Se a animação não está reversa
+                else { 
+                    // Reverte a animação
+                    tl.reverse();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                }
+            });
+        }
+    
+        revealMenu();
+    
+        function revealMenuItems() {
+
+            // Adiciona a classe transition quando a animação está completa
+            tl.eventCallback("onComplete", function () {
+                transitionElement.classList.add("transition");
+            });
+            
+            // Define start and end SVG paths
+            const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+            const end = "M0, 1005S175, 995, 500, 995s500, 5, 500, 5V0H0Z";
+    
+            // Easing functions
+            const power2 = "power2.inOut";
+            const power4 = "power4.inOut";
+    
+            // Timeline animations
+            tl.to("#hamburger", 1.25, {
+                marginTop: "-5px",
+                x: -40,
+                y: 40,
+                ease: power4,
+            });
+    
+            tl.to(".btn .btn-outline", 1.25, {
+                x: -40,
+                y: 40,
+                width: "140px",
+                height: "140px",
+                border: "1px solid #e2e2dc",
+                ease: power4,
+            }, "<");
+    
+            tl.to(path, 0.8, {
+                attr: {
+                    d: end,
+                },
+                ease: Power2.easeOut,
+            }, "<").to(path, 0.8, {
+                attr: {
+                    d: start,
+                },
+                ease: Power2.easeIn,
+            }, "-0.8");
+            
+    
+            tl.to(".menu", 1, {
+                visibility: "visible",
+            }, "-=0.5");
+    
+            tl.to(".menu-item > a", 1, {
+                top: 0,
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.5,
+                },
+            }, "-=1").reverse();
+
+            tl.to(".social-links li", 0, {
+                opacity: 0,
+                transform: "translateY(200px)", // Posição inicial
+            }, "<");
+
+            tl.to(".social-links li", 1, {
+                opacity: 1,
+                transform: "translateY(0)", // Posição final
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.2, // Atraso entre cada item
+                },
+            }, "-=1");
+        }
+    </script>    
+</section>
+
+<noscript>
+    Parabéns Viajante do Tempo, você está nos anos 90. Agora, para acessar este site, você precisa
+    atualizar seu navegador ou habilitar o Javascript nas configurações. E por favor não use o Internet
+    Explorer :).
+</noscript>
+
+</body></html>
