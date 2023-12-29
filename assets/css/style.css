@@ -3,8 +3,8 @@
 /*UNIVERSAL*/
 
 :root {
-    --mainColor: #995ae0;
-    --secColor: #4a00e0;
+    --mainColor: #995AE0;
+    --secColor: #4A00E0;
     --opc: rgba(159,84,211,.1);
     /* #09B363 */
     --textColor:  #efece6;
@@ -440,6 +440,32 @@ header{
     width:100%;
     z-index: 1000
 }
+
+/* === Gradient Circle === */
+
+.gradient-circle {
+    --gradient-size: 55em;
+    width: var(--gradient-size);
+    height: var(--gradient-size);
+    background: radial-gradient(circle, #5a5a5a 0%, var(--darkColor) 66%);
+    position: absolute;
+    opacity: 0.6;
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.gradient-circle-1 {
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gradient-circle-2 {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+} 
 
 /* ! NAVBAR */
 
@@ -1060,9 +1086,6 @@ svg path {
 
 /* =========== */
 
-body{
-    overflow:hidden
-}
 .intro{
     --size:80;
     --relativeWidth:860;
@@ -1417,7 +1440,7 @@ body{
 .section-hero-home .hero-content .heading{
     background-clip:text;
     -webkit-background-clip:text;
-    background-image:url(https://media.giphy.com/media/fHbNKwyC19ysE/giphy.gif);
+    background-image:url(https://media.giphy.com/media/RkG1GB2E4GCu8HVT4q/giphy.gif);
     background-position:50%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -1425,7 +1448,6 @@ body{
     position:relative
 }
 .section-hero-home .hero-content .heading:before{
-    background-color:white;
     content:"";
     height:100%;
     left:0;
@@ -1560,7 +1582,7 @@ body{
 }
 @media (min-width:768px){
     .home-intro-video{
-        width:clamp(740px,67.3003802281vw,1010px)
+        width:clamp(740px,37.3003802281vw,1010px)
     }
 }
 .home-intro-video video{
@@ -1572,7 +1594,7 @@ body{
     .home-intro-video video{
         height:105%;
         margin:-2.5%;
-        width:105%
+        width:125%
     }
 }
 .intro-grid{
@@ -3278,88 +3300,6 @@ img.lazyload{
         gap:60px
     }
 }
-.shared-hero-generator{
-    padding:calc(var(--navbarH) + var(--sectionPaddingY)/ 2) 0 var(--sectionPaddingY)
-}
-.shared-hero-generator .heading{
-    font-size:72px;
-    font-weight:900;
-    letter-spacing:.02em;
-    line-height:80%
-}
-@media screen and (min-width:768px){
-    .shared-hero-generator .heading{
-        font-size:calc(-28.57143px + 13.09520vw)
-    }
-}
-@media screen and (min-width:1440px){
-    .shared-hero-generator .heading{
-        font-size:160px
-    }
-}
-.shared-hero-generator .shared-hero-content{
-    display:inline-flex;
-    flex-direction:column
-}
-.shared-hero-generator .heading-container{
-    align-items:center;
-    display:inline-flex;
-    flex-direction:column;
-    gap:20px;
-    position:relative
-}
-@keyframes beat{
-    0%{
-        transform:scale(1.1)
-    }
-    50%{
-        transform:scale(1)
-    }
-    to{
-        transform:scale(1.1)
-    }
-}
-.get-started-hero .content{
-    text-align:center
-}
-.get-started-hero .content .title{
-    font-size:84px;
-    font-weight:900;
-    letter-spacing:.02em;
-    line-height:80%
-}
-@media screen and (min-width:768px){
-    .get-started-hero .content .title{
-        font-size:calc(-80px + 20vw)
-    }
-}
-@media screen and (min-width:1440px){
-    .get-started-hero .content .title{
-        font-size:196px
-    }
-}
-.get-started-hero .content .paragraph{
-    color: var(--textColor);
-    font-size:20px;
-    line-height:1.4;
-    margin-top:30px;
-    max-width:none
-}
-@media screen and (min-width:768px){
-    .get-started-hero .content .paragraph{
-        font-size:calc(-2.85714px + 2.97619vw)
-    }
-}
-@media screen and (min-width:1440px){
-    .get-started-hero .content .paragraph{
-        font-size:40px
-    }
-}
-@media (min-width:768px){
-    .get-started-hero .content .paragraph{
-        margin-top:40px
-    }
-}
 .form-layout{
     display:grid;
     gap:60px;
@@ -4438,9 +4378,6 @@ footer .btn+.btn{
     background-color: #F14E1C;
 }
 
-
-
-
 /* ! PROJECTS !*/
 
 .shared-hero {
@@ -4503,7 +4440,7 @@ footer .btn+.btn{
 
 @media (min-width: 768px){
     .shared-hero-content .paragraph {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 }
 

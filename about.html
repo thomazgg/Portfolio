@@ -1,0 +1,688 @@
+<!--  This site was created by Me (Code by @uthomaz)  -->
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+    <title>Thomaz ⇀ About me</title>
+
+    <!--  
+    ================= 
+        
+    author: Joao Thomaz 
+    email: uthomaz7@gmail.com 
+    website: https://thomazgg.github.io/Portfolio/ 
+
+    ================= 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Olá, me chamo Thomaz — UX/UI Designer, Brasil. Tenho paixão por criar experiências de que sejam perfeitas, significativas e impactantes.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- social-meta-tags -->
+
+    <meta property="og:site_name" content="Thomaz's Portfolio">
+    <meta property="og:url" content="uthomaz.com">
+    <meta property="og:title" content="Thomaz's Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Portfolio">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thomaz's Portfolio">
+    <meta name="twitter:description" content="Portfolio">
+
+    <link rel="shortcut icon" href="./assets/img/sprites/control.png">
+
+    <!-- css assets -->
+
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" id="global-style-css" href="./assets/css/style.css" type="text/css" media="all">
+
+    <!-- scripts -->
+    
+    <script type="text/javascript" src="./assets/js/loadContent.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt="thomaz">
+                </a>
+                <button type="button" class="navbar-menu-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+            </div>
+            <div class="navbar-menu" data-lenis-prevent="">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" target="_self" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" target="_self" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="dd">Projects</a>
+                        <div class="dd-nav">
+                            <div class="dd-content">
+                                <ul class="dd-list">
+                                    <li class="dd-item">
+                                        <a href="./projects.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">My Works</h6>
+                                                <p class="dd-paragraph">Explore completed web and content creation projects.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dd-item">
+                                        <a href="./case_studies.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Case Studies</h6>
+                                                <p class="dd-paragraph">Detailed project insights, challenges, and results.</p>
+                                            </div>
+                                        </a>
+                                    </li>                                    <li class="dd-item">
+                                        <a href="./gallery.html" class="dd-link">
+                                                <div class="dd-image">
+                                                    <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
+                                                </div>
+                                                <div class="dd-text">
+                                                <h6 class="dd-title">Gallery</h6>
+                                                <p class="dd-paragraph">Visual showcase of projects with aesthetic excellence.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" target="_self" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="./contact.html" target="_self" class="btn btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Contact me</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-actions">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- toggle button -->
+                        <div class="btn" id="toggle-btn">
+                            <div class="btn-outline btn-outline-1"></div>
+                            <div class="btn-outline btn-outline-2"></div>
+                            <div id="hamburger">
+                            <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="menu-overlay" style="height: 0;">
+        <!-- svg overlay -->
+        <div class="overlay">
+            <svg viewBox="0 0 1000 1000">
+                <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+            </svg>
+        </div>
+        <!-- menu items -->
+        <div class="menu">
+            <div class="primary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./index.html"><span>I</span>Home</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./about.html"><span>II</span>About</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>III</span>Projects</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="./projects.html"><span>IV</span>Contact</a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="secondary-menu">
+                <div class="menu-container">
+                    <div class="wrapper">
+                        <div class="menu-item">
+                            <a href="./projects.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>My Works</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./case_studies.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Case Studies</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+    
+                        <div class="menu-item">
+                            <a href="./gallery.html">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                                <span>Gallery</span>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+    
+                    <div class="wrapper2">
+                        <div class="menu-item">
+                            <a href="./contact.html" target="_self" class="btn btn-sm btn-white">
+                                <div class="btn-bg"></div>
+                                <div class="btn-text">
+                                    Contact me
+                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <div class="menu-item-revealer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://github.com/thomazgg" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/github.svg" width="20" height="20" alt="Github">
+                            <span class="button-tooltip">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/uthomaz/" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/linkedin.svg" width="20" height="20" alt="Linkedin">
+                            <span class="button-tooltip">Linkedin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/behance.svg" width="20" height="20" alt="Behance">
+                            <span class="button-tooltip">Behance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/dribble.svg" width="20" height="20" alt="Dribble">
+                            <span class="button-tooltip">Dribble</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/invite/DJuK4KGa94" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/discord.svg" width="20" height="20" alt="Discord">
+                            <span class="button-tooltip">Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/uthomaz" target="_blank">
+                            <div class="radar-border-mask">
+                                <div class="radar-border"></div>
+                            </div>
+                            <img src="./assets/logos/link.svg" width="20" height="20" alt="Linktree">
+                            <span class="button-tooltip">Linktree</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <section class="section section-hero-home">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 class="heading">Design, Art, Type.</h1>
+                    <p class="paragraph">Seeking clarity, I'm a Web Developer & UI/UX Designer passionate about blending art 🎨 with minimalist design 🖼️, yielding harmonious and striking results.</p>
+                    <div class="buttons">
+                        <a href="./projects.html" target="_self" class="btn btn-lg btn-neon-green">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">My Works             
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="./contact.html" target="_self" class="btn btn-lg btn-white">
+                            <div class="btn-bg"></div>
+                            <div class="btn-text">Contact me</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="home-intro-video">
+                        <video muted="" autoplay="" loop="" playsinline="" poster="">
+                            <source src="./assets/vid/_hero-gif.mp4" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section overflow-hidden pt-0 mt-1 mb-1">
+        <div class="container">
+            <div class="joyful-customization-app">
+                <div class="content">
+                    <h2 class="heading">Crafting Experiential Merch and <span>Web Design Excellence</span></h2>
+                </div>
+                <div class="grid">
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/_main/sprites/play.svg" alt="video-editing">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Video Editing Experience</h6>
+                            <p class="paragraph">My journey in video editing began during the pandemic. I've gained expertise in After Effects, Premiere, and Blender.</p>
+                        </div>
+                    </div>
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/_main/sprites/cursor-click.svg" alt="content-creation">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Content Creation Experience</h6>
+                            <p class="paragraph">In my creative journey, I've mastered Photoshop and Adobe Illustrator, creating thumbnails, headers, banners, and more.</p>
+                        </div>
+                    </div>
+                    <div class="blurb">
+                        <div class="icon">
+                            <img src="./assets/img/_main/sprites/paleta.svg" alt="programming_and_ui_ux_experience">
+                        </div>
+                        <div class="text">
+                            <h6 class="title">Programming and UI/UX Experience</h6>
+                            <p class="paragraph">My love for coding ignited during quarantine. I'm passionate about web design and skilled Adobe XD, and Figma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section overflow-hidden p-0 mb-4">
+        <div class="app-features-section">
+            <div class="carousel">
+                <div class="loop" data-speed="4">
+                    <div class="loop-track" style="transform: translate(80.7861%, 0%) translate3d(0px, 0px, 0px);">
+                        <div class="loop-content">
+                            <div class="carousel-itemlazyloaded" data-expand="-1" style="margin: 30px;">
+                                <img alt="" width="480" height="576" class="lazyload" data-srcset="./assets/img/about/1.jpg 1x, ./assets/img/about/1.jpg 2x" data-lowsrc="./assets/img/about/1.jpg" data-sizes="auto" style="border-radius: 60px;">
+                            </div>
+                            <div class="carousel-itemlazyloaded" data-expand="-1" style="margin: 30px;">
+                                <img alt="" width="480" height="576" class="lazyload" data-srcset="./assets/img/about/2.jpg 1x, ./assets/img/about/2.jpg 2x" data-lowsrc="./assets/img/about/2.jpg" data-sizes="auto" style="border-radius: 60px;">
+                            </div>
+                            <div class="carousel-itemlazyloaded" data-expand="-1" style="margin: 30px;">
+                                <img alt="" width="480" height="576" class="lazyload" data-srcset="./assets/img/about/3.jpg 1x, ./assets/img/about/3.jpg 2x" data-lowsrc="./assets/img/about/3.jpg" data-sizes="auto" style="border-radius: 60px;">
+                            </div>
+                            <div class="carousel-itemlazyloaded" data-expand="-1" style="margin: 30px;">
+                                <img alt="" width="480" height="576" class="lazyload" data-srcset="./assets/img/about/4.jpg 1x, ./assets/img/about/4.jpg 2x" data-lowsrc="./assets/img/about/4.jpg" data-sizes="auto" style="border-radius: 60px;">
+                            </div>
+                            <div class="carousel-itemlazyloaded" data-expand="-1" style="margin: 30px;">
+                                <img alt="" width="480" height="576" class="lazyload" data-srcset="./assets/img/about/5.jpg 1x, ./assets/img/about/5.jpg 2x" data-lowsrc="./assets/img/about/5.jpg" data-sizes="auto" style="border-radius: 60px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content-layout">
+                    <div>
+                        <h3 class="heading">About <span class="stroke-text">Me</span></h3>
+                    </div>
+                <div>
+                    <p class="paragraph">👋  Hello! I'm Thomaz, a Brazilian studying Computer Science. During the pandemic, I explored video editing with After Effects 🎥 as a hobby. 
+                        I also learned to use Photoshop 🖌️, initially from YouTube videos 📺 and later through courses 📚.
+                    </p>
+                </div>
+                </div>
+                <div class="app-features">
+                    <div class="feature-layout">
+                        <div class="content">
+                            <div class="content">
+                                <div class="meta-tags-container">
+                                <div class="meta-tags">
+                                    <div class="family-tag after-effects">
+                                        <div class="family-tag-inner">After Effects</div>
+                                    </div>
+                                    <div class="family-tag premiere">
+                                        <div class="family-tag-inner">Premiere</div>
+                                    </div>
+                                    <div class="family-tag blender">
+                                        <div class="family-tag-inner">Blender</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="title">Video Editing Experience</h6>
+                        </div>
+                            <p class="paragraph">My experience with video editing has been great as I learned a lot in just one year, watching many videos and putting my knowledge into practice.</p>
+                                <a href="https://youtu.be/TaWsQjS-4Eo?si=Qv9mDHCXaaSK3rgN" target="_blank" class="btn btn-sm btn-white">
+                                    <div class="btn-bg"></div>
+                                    <div class="btn-text">View on Youtube                                           
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="media">
+                            <div class="mockup">
+                                <div class="mockup-inner">
+                                    <div class="screen">
+                                        <div class="video">
+                                            <video class="lazyloaded" muted="" loop="" autoplay="" data-poster="./assets/img/_main/data_poster.webp" preload="auto" poster="./assets/img/_main/data_poster.webp">
+                                                <source src="./assets/vid/dreams.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-layout">
+                        <div class="content">
+                            <div class="content">
+                            <div class="meta-tags-container">
+                                <div class="meta-tags">
+                                <div class="family-tag photoshop">
+                                    <div class="family-tag-inner">Photoshop</div>
+                                </div>
+                                <div class="family-tag illustrator">
+                                    <div class="family-tag-inner">Adobe Illustrator</div>
+                                </div>
+                            </div>
+                            <h6 class="title">Content Creation Experience</h6>
+                        </div>
+                        </div>
+                            <p class="paragraph">I also learned to use Photoshop at the same time since I needed to create thumbnails, headers, banners, and various assets for my video editing work. In essence, I learned a lot by watching videos and even taking a course that greatly aided my development.</p>
+                                <a href="https://youtu.be/YdYdq6aUGpw?si=vfm6dQPh33FMFMwW" target="_blank" class="btn btn-sm btn-white">
+                                    <div class="btn-bg"></div>
+                                    <div class="btn-text">View on Youtube                                           
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="media">
+                            <div class="mockup">
+                                <div class="mockup-inner">
+                                    <div class="screen">
+                                        <div class="video">
+                                            <video class="lazyloaded" muted="" loop="" autoplay="" data-poster="./assets/img/_main/data_poster.webp" preload="auto" poster="./assets/img/_main/data_poster.webp">
+                                                <source src="./assets/vid/content-creation.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-layout">
+                        <div class="content">
+                            <div class="content">
+                                <div class="meta-tags-container">
+                                <div class="meta-tags">
+                                    <div class="family-tag visual-studio-code">
+                                        <div class="family-tag-inner">Visual Studio Code</div>
+                                    </div>
+                                    <div class="family-tag adobe-xd">
+                                        <div class="family-tag-inner">Adobe XD</div>
+                                    </div>
+                                    <div class="family-tag figma">
+                                        <div class="family-tag-inner">Figma</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="title">Programming and UI/UX Experience</h6>
+                        </div>
+                            <p class="paragraph"> I then fell in love with coding, after spending a significant amount of time at home during the quarantine. That's when I realized my passion for programming, specifically in the realm of web design.</p>
+                                <a href="./projects.html" target="_blank" class="btn btn-sm btn-white">
+                                    <div class="btn-bg"></div>
+                                    <div class="btn-text">Learn More                                            
+                                        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                        </div>
+                        <div class="media">
+                            <div class="mockup">
+                                <div class="mockup-inner">
+                                    <div class="screen">
+                                        <div class="video">
+                                            <video class="lazyloaded" muted="" loop="" autoplay="" data-poster="./assets/img/_main/data_poster.webp" preload="auto" poster="./assets/img/_main/data_poster.webp">
+                                                <source src="./assets/vid/design.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="section overflow-hidden">
+        <div class="container">
+            <div class="why-us-section">
+                <div class="content">
+                    <div class="avatars">
+                        <div class="avatar img1 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker1.png 1x, ./assets/img/home/sticker1.png 2x" data-lowsrc="./assets/img/home/sticker1.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker1.png 1x, ./assets/img/home/sticker1.png 2x">
+                        </div>
+                        <div class="avatar img2 lazyloaded" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="./assets/img/home/sticker2.png 1x, ./assets/img/home/sticker2.png 2x" data-lowsrc="./assets/img/home/sticker2.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker2.png 1x, ./assets/img/home/sticker2.png 2x">
+                        </div>
+                        <div class="avatar img3 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker3.png 1x, ./assets/img/home/sticker3.png 2x" data-lowsrc="./assets/img/home/sticker3.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker3.png 1x, ./assets/img/home/sticker3.png 2x">
+                        </div>
+                        <div class="avatar img4 lazyload" data-expand="-1">
+                            <img alt="" width="160" height="160" class="lazyautosizes ls-is-cached lazyloaded" data-srcset="./assets/img/home/sticker4.png 1x, ./assets/img/home/sticker4.png 2x" data-lowsrc="./assets/img/home/sticker4.png" data-sizes="auto" sizes="160px" srcset="./assets/img/home/sticker4.png 1x, ./assets/img/home/sticker4.png 2x">
+                        </div>
+                    </div>
+                    <h2 class="heading">Looking for<br>a Fresh Design?</h2>
+                    <p class="paragraph">I provide all your digital project needs, from websites to video editing, logos, banners, and more. Tell me what you want, and I'm ready to help.</p>
+                    <a href="./contact.html" target="_self" class="btn btn-lg btn-white">
+                        <div class="btn-bg"></div>
+                        <div class="btn-text">
+                            Contact Me
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1022 7.75413C18.3339 7.60911 13.8575 6.00383 11.6599 0.533936L9.34011 1.46596C10.5042 4.36335 12.2262 6.38334 14.0036 7.74995H0V10.2499L14.0036 10.2499C12.2262 11.6166 10.5042 13.6365 9.34011 16.5339L11.6599 17.466C13.8575 11.9961 18.3339 10.3908 20.1022 10.2458L20.0512 8.99995L20.1022 7.75413Z" fill="#0F0F0F"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="footer-container"></div>
+
+<script>
+    loadContent("footer-container", "./content/footer.html");
+</script>
+
+<!-- ======== JS ======== -->
+
+<section>
+    <script type="text/javascript" src="./assets/js/paths.bundle.js.download" id="paths-js"></script>
+    <script type="text/javascript" src="./assets/js/gsap-core.bundle.js.download" id="gsap-core-js"></script>
+    <script type="text/javascript" src="./assets/js/CSSPlugin.bundle.js.download" id="css-plug-js"></script>
+    <script type="text/javascript" src="./assets/js/global.bundle.js.download" id="global-js-js"></script>
+    <!-- ==== MENU OVERLAY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
+    <script>
+        // Setup
+        const tl = gsap.timeline({ paused: true });
+        const path = document.querySelector("path");
+        const transitionElement = document.querySelector(".menu-overlay .menu");
+    
+        gsap.set(".menu", { visibility: "hidden" });
+    
+        // Toggle Menu
+        function revealMenu() {
+            revealMenuItems();
+    
+            const hamburger = document.getElementById("hamburger");
+            const toggleBtn = document.getElementById("toggle-btn");
+    
+            toggleBtn.addEventListener("click", function () {
+                hamburger.classList.toggle("active");
+
+                // Se a animação está reversa
+                if (tl.reversed()) {
+                    // Reproduz a animação
+                    tl.play();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                } 
+                // Se a animação não está reversa
+                else { 
+                    // Reverte a animação
+                    tl.reverse();
+                    // Remove a classe transition
+                    transitionElement.classList.remove("transition");
+                }
+            });
+        }
+    
+        revealMenu();
+    
+        function revealMenuItems() {
+
+            // Adiciona a classe transition quando a animação está completa
+            tl.eventCallback("onComplete", function () {
+                transitionElement.classList.add("transition");
+            });
+            
+            // Define start and end SVG paths
+            const start = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+            const end = "M0, 1005S175, 995, 500, 995s500, 5, 500, 5V0H0Z";
+    
+            // Easing functions
+            const power2 = "power2.inOut";
+            const power4 = "power4.inOut";
+    
+            // Timeline animations
+            tl.to("#hamburger", 1.25, {
+                marginTop: "-5px",
+                x: -40,
+                y: 40,
+                ease: power4,
+            });
+    
+            tl.to(".btn .btn-outline", 1.25, {
+                x: -40,
+                y: 40,
+                width: "140px",
+                height: "140px",
+                border: "1px solid #e2e2dc",
+                ease: power4,
+            }, "<");
+    
+            tl.to(path, 0.8, {
+                attr: {
+                    d: end,
+                },
+                ease: Power2.easeOut,
+            }, "<").to(path, 0.8, {
+                attr: {
+                    d: start,
+                },
+                ease: Power2.easeIn,
+            }, "-0.8");
+            
+    
+            tl.to(".menu", 1, {
+                visibility: "visible",
+            }, "-=0.5");
+    
+            tl.to(".menu-item > a", 1, {
+                top: 0,
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.5,
+                },
+            }, "-=1").reverse();
+
+            tl.to(".social-links li", 0, {
+                opacity: 0,
+                transform: "translateY(200px)", // Posição inicial
+            }, "<");
+
+            tl.to(".social-links li", 1, {
+                opacity: 1,
+                transform: "translateY(0)", // Posição final
+                ease: "power3.out",
+                stagger: {
+                    amount: 0.2, // Atraso entre cada item
+                },
+            }, "-=1");
+        }
+    </script>    
+</section>
+
+<noscript>
+    Parabéns Viajante do Tempo, você está nos anos 90. Agora, para acessar este site, você precisa
+    atualizar seu navegador ou habilitar o Javascript nas configurações. E por favor não use o Internet
+    Explorer :).
+</noscript>
+
+</body></html>

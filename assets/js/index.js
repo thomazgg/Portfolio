@@ -154,6 +154,22 @@ TweenMax.to(".h-9", 2, {
   delay: 1.8,
 });
 
+// ---------- gradient-circle ------------
+
+TweenMax.to(".gradient-circle-1", 0, {
+  y: "-30%",
+  opacity: 0,
+  ease: Expo.easeInOut,
+  delay: 0,
+});
+
+TweenMax.to(".gradient-circle-1", 3, {
+  y: "0%",
+  opacity: 1,
+  ease: Expo.easeInOut,
+  delay: 1,
+});
+
 // ----------------------
 
 TweenMax.to(".dribbble", 0, {
