@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <link rel="stylesheet" id="global-style-css" href="./assets/css/style.css" type="text/css" media="all">
 
     <!-- scripts -->
@@ -46,15 +47,16 @@
     <script type="text/javascript" src="./assets/js/loadContent.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
-<body>
+
+<body class="-cursor">
 
 <header>
     <!-- navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-header">
-                <a href="./index.html" class="navbar-brand">
-                <img src="./assets/img/logo.png" alt="thomaz">
+                <a data-cursor-stick data-cursor="-scale" href="./index.html" class="navbar-brand">
+                    <img src="./assets/img/logo.png" alt="thomaz">
                 </a>
                 <button type="button" class="navbar-menu-toggler">
                 <span></span>
@@ -65,13 +67,13 @@
             <div class="navbar-menu" data-lenis-prevent="">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="./index.html" target="_self" class="nav-link active">Home</a>
+                        <a data-cursor-stick data-cursor="-default" href="./index.html" target="_self" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./about.html" target="_self" class="nav-link">About</a>
+                        <a data-cursor-stick data-cursor="-default" href="./about.html" target="_self" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="dd">Projects</a>
+                        <a data-cursor-stick data-cursor="-default" class="nav-link" data-toggle="dd">Projects</a>
                         <div class="dd-nav">
                             <div class="dd-content">
                                 <ul class="dd-list">
@@ -96,7 +98,8 @@
                                                 <p class="dd-paragraph">Detailed project insights, challenges, and results.</p>
                                             </div>
                                         </a>
-                                    </li>                                    <li class="dd-item">
+                                    </li>                                    
+                                    <li class="dd-item">
                                         <a href="./gallery.html" class="dd-link">
                                                 <div class="dd-image">
                                                     <img src="./assets/img/home/post4.jpg" srcset="./assets/img/home/post4.jpg 60w, ./assets/img/home/post4.jpg 120w" sizes="(max-width: 767px) 60px, 120px" alt="">
@@ -112,7 +115,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="./contact.html" target="_self" class="nav-link">Contact</a>
+                        <a data-cursor-stick data-cursor="-default" href="./contact.html" target="_self" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item d-block d-lg-none">
                         <a href="./contact.html" target="_self" class="btn btn-white">
@@ -126,7 +129,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <!-- toggle button -->
-                        <div class="btn" id="toggle-btn">
+                        <div data-cursor-stick data-cursor="-magnetic" class="btn" id="toggle-btn">
                             <div class="btn-outline btn-outline-1"></div>
                             <div class="btn-outline btn-outline-2"></div>
                             <div id="hamburger">
@@ -292,7 +295,7 @@
             <!---->
             <div class="h-0 d-flex circle-wrapper justify-content-center align-items-center" >
                 <h2 class="headline-font text-center should-animate d-inline-block position-relative headline-row display-3"  style="opacity: 1;">
-                    <span class="headline-text-row position-relative p-1 display-3 headline-text-row--0" data-cursor="-opaque">Welcome to the</span>
+                    <span class="headline-text-row position-relative p-1 display-3 headline-text-row--0">Welcome to the</span>
                 </h2>
             </div>
             <!---->
@@ -342,13 +345,13 @@
             <!---->
             <div class="-container">
                 <div class="floating-icons">
-                    <a href="https://dribbble.com/uthomaz" target="_blank" rel="noreferrer" class="dribbble">
+                    <a data-cursor-stick data-cursor="-dribbble" href="https://dribbble.com/uthomaz" target="_blank" rel="noreferrer" class="dribbble">
                         <span><img src="./assets/img/_main/sprites/dribbble.svg" alt="dribbble"></span>
                     </a>
-                    <a href="https://www.linkedin.com/in/uthomaz" target="_blank" rel="noreferrer" class="linkedin">
+                    <a data-cursor-stick data-cursor="-linkedin" href="https://www.linkedin.com/in/uthomaz" target="_blank" rel="noreferrer" class="linkedin">
                         <span><img src="./assets/img/_main/sprites/linkedin.svg" alt="linkedin"></span>
                     </a>
-                    <a href="https://www.behance.net/uthomaz" target="_blank" rel="noreferrer" class="behance">
+                    <a data-cursor-stick data-cursor="-behance" href="https://www.behance.net/uthomaz" target="_blank" rel="noreferrer" class="behance">
                         <span><img src="./assets/img/_main/sprites/behance.svg" alt="behance"></span>
                     </a>
                 </div>
@@ -376,7 +379,7 @@
                             <p class="paragraph">Crafting websites that adapt seamlessly to any device, ensuring a flawless user experience.</p>
                         </div>
                         <div class="buttons">
-                            <a href="./projects.html" class="btn btn-sm btn-white">
+                            <a data-cursor="-hidden" href="./projects.html" class="btn btn-sm btn-white">
                                 <div class="btn-bg"></div>
                                 <div class="btn-text">
                                     Explore My Works
@@ -396,7 +399,7 @@
                             <p class="paragraph">Designing user-friendly interfaces that engage your audience and drive conversions.</p>
                         </div>
                         <div class="buttons">
-                            <a href="./case_studies.html" class="btn btn-sm btn-white">
+                            <a data-cursor="-hidden" href="./case_studies.html" class="btn btn-sm btn-white">
                                 <div class="btn-bg"></div>
                                 <div class="btn-text">
                                     See My Studie Cases
@@ -416,7 +419,7 @@
                             <p class="paragraph">Elevate your brand with captivating, custom designs that leave a lasting impression.</p>
                         </div>
                         <div class="buttons">
-                            <a href="./gallery.html" class="btn btn-sm btn-white">
+                            <a data-cursor="-hidden" href="./gallery.html" class="btn btn-sm btn-white">
                                 <div class="btn-bg"></div>
                                 <div class="btn-text">
                                     Browse My Gallery
@@ -442,8 +445,16 @@
                 <div class="featured-cases-track">
 
                     <div class="featured-case">
-                        <a href="zgowiecre.com" class="thumb">
-                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/zgowie.jpg 1x, ./assets/img/projects/zgowie.jpg 2x" data-lowsrc="./assets/img/projects/zgowie.jpg" data-sizes="auto">
+                        <a href="zgowiecre.com" class="thumb" data-cursor-text="View work">
+                            <img
+                            alt="Carousel"
+                            width="580"
+                            height="580"
+                            class="lazyload"
+                            data-srcset="./assets/img/projects/zgowie.jpg 1x, ./assets/img/projects/zgowie.jpg 2x"
+                            data-lowsrc="./assets/img/projects/zgowie.jpg"
+                            data-sizes="auto"
+                          />
                         </a>
                         <div class="caption">
                             <div class="caption-grid">
@@ -451,67 +462,91 @@
                                     <h6 class="title">Official website of zgowie</h6>
                                 </a>
                                 <a href="zgowiecre.com">
-                                    <p class="location">
-                                        zgowie.com
-                                    </p>
+                                    <p class="location">zgowie.com</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="featured-case">
-                        <a href="6" class="thumb">
-                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/bgs-case-study.png 1x, ./assets/img/projects/bgs-case-study.png 2x" data-lowsrc="./assets/img/projects/bgs-case-study.png" data-sizes="auto">
+                        <a href="#" class="thumb" data-cursor-text="View work">
+                            <img
+                            alt="Carousel"
+                            width="580"
+                            height="580"
+                            class="lazyload"
+                            data-srcset="./assets/img/projects/bgs-case-study.png 1x, ./assets/img/projects/bgs-case-study.png 2x"
+                            data-lowsrc="./assets/img/projects/bgs-case-study.png"
+                            data-sizes="auto"
+                          />
                         </a>
                         <div class="caption">
                             <div class="caption-grid">
-                                <a href="6">
+                                <a href="#">
                                     <h6 class="title">BGS - Redesign</h6>
                                 </a>
-                                <a href="6">
-                                    <p class="location">
-                                        UI & UX Case Study
-                                    </p>
+                                <a href="#">
+                                    <p class="location">UI & UX Case Study</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="featured-case">
-                        <a href="5" class="thumb">
-                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/steam-redesign.png 1x, ./assets/img/projects/steam-redesign.png 2x" data-lowsrc="./assets/img/projects/steam-redesign.png" data-sizes="auto">
+                        <a href="#" class="thumb" data-cursor-text="View work">
+                            <img
+                            alt="Carousel"
+                            width="580"
+                            height="580"
+                            class="lazyload"
+                            data-srcset="./assets/img/projects/steam-redesign.png 1x, ./assets/img/projects/steam-redesign.png 2x"
+                            data-lowsrc="./assets/img/projects/steam-redesign.png"
+                            data-sizes="auto"
+                          />
                         </a>
                         <div class="caption">
                             <div class="caption-grid">
-                                <a href="5">
+                                <a href="#">
                                     <h6 class="title">Steam - Redesign</h6>
                                 </a>
-                                <a href="5">
-                                    <p class="location">
-                                        UI & UX Redesign
-                                    </p>
+                                <a href="#">
+                                    <p class="location">UI & UX Redesign</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="featured-case">
-                        <a href="6" class="thumb">
-                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/spotify-but-better.png 1x, ./assets/img/projects/spotify-but-better.png 2x" data-lowsrc="./assets/img/projects/spotify-but-better.png" data-sizes="auto">
+                        <a href="#" class="thumb" data-cursor-text="View work">
+                            <img
+                            alt="Carousel"
+                            width="580"
+                            height="580"
+                            class="lazyload"
+                            data-srcset="./assets/img/projects/spotify-but-better.png 1x, ./assets/img/projects/spotify-but-better.png 2x"
+                            data-lowsrc="./assets/img/projects/spotify-but-better.png"
+                            data-sizes="auto"
+                          />
                         </a>
                         <div class="caption">
                             <div class="caption-grid">
-                                <a href="6">
+                                <a href="#">
                                     <h6 class="title">Spotify-But-Better</h6>
                                 </a>
-                                <a href="6">
-                                    <p class="location">
-                                        UI & UX Redesign
-                                    </p>
+                                <a href="#">
+                                    <p class="location">UI & UX Redesign</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="featured-case">
-                        <a href="2" class="thumb">
-                        <img alt="Carousel" width="580" height="580" class="lazyload" data-srcset="./assets/img/projects/rodgrossi-redesign.png 1x, ./assets/img/projects/rodgrossi-redesign.png 2x" data-lowsrc="./assets/img/projects/rodgrossi-redesign.png" data-sizes="auto">
+                        <a href="#" class="thumb" data-cursor-text="View work">
+                            <img
+                            alt="Carousel"
+                            width="580"
+                            height="580"
+                            class="lazyload"
+                            data-srcset="./assets/img/projects/rodgrossi-redesign.png 1x, ./assets/img/projects/rodgrossi-redesign.png 2x"
+                            data-lowsrc="./assets/img/projects/rodgrossi-redesign.png"
+                            data-sizes="auto"
+                          />
                         </a>
                         <div class="caption">
                             <div class="caption-grid">
@@ -519,9 +554,7 @@
                                     <h6 class="title">Rodgrossi - Redesign</h6>
                                 </a>
                                 <a href="2">
-                                    <p class="location">
-                                        UI & UX Redesign
-                                    </p>
+                                    <p class="location">UI & UX Redesign</p>
                                 </a>
                             </div>
                         </div>
@@ -550,8 +583,8 @@
                         </div>
                     </div>
                     <h2 class="heading">Looking for<br>a Fresh Design?</h2>
-                    <p class="paragraph">I provide all your digital project needs, from websites to video editing, logos, banners, and more. Tell me what you want, and I'm ready to help.</p>
-                    <a href="./" target="_self" class="btn btn-lg btn-white">
+                    <p class="paragraph"><span>It's simple. You request, we design, Together!</span> I provide a range of digital services, from websites to video editing, logos, banners, and more. Share your vision, and I'm here to help.</p>
+                    <a data-cursor="-hidden" href="./" target="_self" class="btn btn-lg btn-white">
                         <div class="btn-bg"></div>
                         <div class="btn-text">
                             Contact Me
@@ -1054,6 +1087,20 @@
     <script type="text/javascript" src="./assets/js/gsap-core.bundle.js.download" id="gsap-core-js"></script>
     <script type="text/javascript" src="./assets/js/CSSPlugin.bundle.js.download" id="css-plug-js"></script>
     <script type="text/javascript" src="./assets/js/global.bundle.js.download" id="global-js-js"></script>
+
+    <!-- ==== MOUSE FOLLOWER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        const cursor = new MouseFollower({
+            stateDetection: {
+                '-pointer': 'a,button',
+                '-opaque': '.my-image',
+                '-hidden': '.my-input'
+            }
+        });
+    </script> 
+
     <!-- ==== MENU OVERLAY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"></script>
