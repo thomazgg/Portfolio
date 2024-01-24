@@ -1290,7 +1290,8 @@ svg path {
     position:relative
 }
 .shared-heading,.shared-heading .heading{
-    margin-bottom:clamp(60px,7.0052539405vw,120px)
+    /* margin-bottom:clamp(60px,7.0052539405vw,120px) */
+    margin-bottom: clamp(30px,7.005253940500097vw,40px);
 }
 .shared-heading .heading{
     color: var(--textColor);
@@ -2074,6 +2075,12 @@ img.lazyload{
     .featured-cases-section .shared-heading .heading{
         font-size:128px
     }
+}
+.featured-cases-section .paragraph{
+    color: var(--lighterColor);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5em;
 }
 .featured-cases-module{
     --padding-x:20px;
