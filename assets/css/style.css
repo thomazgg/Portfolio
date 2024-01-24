@@ -4,7 +4,7 @@
 
 :root {
     --mainColor: #995AE0;
-    --secColor: #4A00E0;
+    --secColor: #1C3AFF;
     --opc: rgba(159,84,211,.1);
     /* #09B363 */
     --textColor:  #efece6;
@@ -278,7 +278,7 @@ button{
 .bg-violet{
     background-color: #1c7dc2
 }
-.text-neon-green{
+.text-neon-purple{
     color: var(--mainColor)
 }
 .text-teal{
