@@ -24,7 +24,7 @@
 
 /* custom scrollbar */
 
-/* 
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -43,7 +43,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--lighterColor);
 }
-*/
+
 
 *,:after,:before{
     box-sizing:inherit
@@ -759,6 +759,9 @@ header{
     }
 }
 
+.menu {
+    visibility: hidden;
+}
 .menu-open{
     display:flex
 }
