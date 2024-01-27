@@ -291,63 +291,61 @@
 </header>
 
 <main>
-    <!-- 
+
     <section class="section shared-hero">
         <div class="container">
             <div class="shared-hero-content shared-hero-center">
-                <h1 class="heading"><span>Image</span> Gallery</h1>
+                <h1 class="heading">Gallery</h1>
                 <p class="paragraph mt-1">Visual showcase of projects with aesthetic excellence.</p>
             </div>
         </div>
     </section> 
-    -->
-    <!-- 
-    <section class="section overflow-hidden pt-0">
+
+    <section class="overflow-hidden pt-0">
         <div class="wrapp">
-            <ul class="gallery" data-cursor-text="Zoom">
+            <ul class="gallery">
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/bgs-case-study.png">
                     <img src="./assets/img/projects/bgs-case-study.png" alt="1" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/chinafood.jpg">
                     <img src="./assets/img/projects/chinafood.jpg" alt="2" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/coffeshop.jpg">
                     <img src="./assets/img/projects/coffeshop.jpg" alt="3" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/gama-redesign.jpg">
                     <img src="./assets/img/projects/gama-redesign.jpg" alt="4" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/mobile-app-kabum-2.jpg">
                     <img src="./assets/img/projects/mobile-app-kabum-2.jpg" alt="5" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/rodgrossi-redesign.png">
                     <img src="./assets/img/projects/rodgrossi-redesign.png" alt="6" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/spotify-but-better.png">
                     <img src="./assets/img/projects/spotify-but-better.png" alt="7" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/steam-redesign.png">
                     <img src="./assets/img/projects/steam-redesign.png" alt="8" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
                 <li class="gallery__item" data-fancybox="gallery" data-cursor-text="Zoom" data-src="./assets/img/projects/zgowie.jpg">
                     <img src="./assets/img/projects/zgowie.jpg" alt="9" class="gallery__img">
-                    <span class="zoom">zoom</span>
+                    <!-- <span class="zoom">zoom</span> -->
                 </li>
             </ul>
 
         </div>
     </section>
-    -->
     
-    <div class="slider">
+    <!-- <div class="slider">
         <div class="content">
           <div class="slider-wrapper">
             <div class="slider-item">
@@ -417,11 +415,11 @@
             <div class="slider-progress-bar"></div>
           </div>
         </div>
-    </div>
+    </div> -->
 </main>
 
 
-<!-- <div id="footer-container"></div> -->
+<div id="footer-container"></div>
 
 <script>
     loadContent("footer-container", "./content/footer.html");
@@ -430,37 +428,7 @@
 
 <!-- ======== JS ======== -->
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script>
-    Fancybox.bind('[data-fancybox="gallery" data-cursor-text="Zoom"]', {
-        dragToClose: false,
-
-        closeButton: "top",
-
-        Image: {
-            zoom: false,
-        },
-
-        on: {
-            initCarousel: (fancybox) => {
-                const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
-
-                fancybox.$container.style.setProperty(
-                    "--bg-image",
-                    `url("${slide.$thumb.src}")`
-                );
-            },
-            "Carousel.change": (fancybox, carousel, to, from) => {
-                const slide = carousel.slides[to];
-
-                fancybox.$container.style.setProperty(
-                    "--bg-image",
-                    `url("${slide.$thumb.src}")`
-                );
-            },
-        },
-    });
-</script>
+<!-- 
 <script>
     const lerp = (f0, f1, t) => (1 - t) * f0 + t * f1;
     const clamp = (val, min, max) => Math.max(min, Math.min(val, max));
@@ -590,7 +558,8 @@
     document.body.style.overflow = 'hidden';
 
     animateScroll();
-</script>
+</script> 
+-->
 
 <section>
     <script type="text/javascript" src="./assets/js/index.js" defer=""></script>
@@ -598,6 +567,39 @@
     <script type="text/javascript" src="./assets/js/gsap-core.bundle.js.download" id="gsap-core-js"></script>
     <script type="text/javascript" src="./assets/js/CSSPlugin.bundle.js.download" id="css-plug-js"></script>
     <script type="text/javascript" src="./assets/js/global.bundle.js.download" id="global-js-js"></script>
+
+    <!-- FANCYBOX IMAGES -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            dragToClose: false,
+
+            closeButton: "top",
+
+            Image: {
+                zoom: false,
+            },
+
+            on: {
+                initCarousel: (fancybox) => {
+                    const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
+                "Carousel.change": (fancybox, carousel, to, from) => {
+                    const slide = carousel.slides[to];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
+            },
+        });
+    </script>
 
     <!-- MOUSE FOLLOWER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

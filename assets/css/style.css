@@ -4491,6 +4491,8 @@ footer .btn+.btn{
 	margin-left: auto;
     margin-right: auto;
     max-width: 1640px;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
     width: 100%;
 	height: auto;
 	z-index: 1;
@@ -4610,7 +4612,7 @@ footer .btn+.btn{
 	max-width: calc(33.33% - 40px);
 	width: 100%;
 	height: 500px;
-    border-radius: 32px;
+    /* border-radius: 32px; */
 	list-style: none;
 	overflow: hidden;
 	cursor: pointer;
@@ -4626,7 +4628,7 @@ footer .btn+.btn{
 }
 
 .gallery__item:hover .gallery__img {
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 .gallery__item::after {
@@ -4637,7 +4639,7 @@ footer .btn+.btn{
 	top: 0;
 	left: 0;
 	opacity: 0;
-	backdrop-filter: blur(20px);
+	/* backdrop-filter: blur(20px); */
 	background: rgba(0, 0, 0, 0.614);
 	will-change: opacity;
 	pointer-events: none;
