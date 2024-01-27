@@ -1468,6 +1468,40 @@ svg path {
     width:100%
 }
 
+.animate-dot {
+    opacity: 0;
+    animation: animateDot1 2s linear infinite;
+ }
+ 
+ .animate-dot:nth-child(2) {
+    animation: animateDot2 2s linear infinite;
+ }
+ 
+ .animate-dot:nth-child(3) {
+    animation: animateDot3 2s linear infinite;
+ }
+ 
+ @keyframes animateDot1 {
+    0%   {opacity: 0; }
+    20%  {opacity: 0;}
+    30%  {opacity: 1;}
+    90% {opacity: 1;}
+ }
+ 
+ @keyframes animateDot2 {
+    0%   {opacity: 0; }
+    35%  {opacity: 0;}
+    45%  {opacity: 1;}
+    90% {opacity: 1;}
+ }
+ 
+ @keyframes animateDot3 {
+    0%   {opacity: 0; }
+    50%  {opacity: 0;}
+    60%  {opacity: 1;}
+    90% {opacity: 1;}
+ }
+
 .leave-an-impression-section {
     text-align: left;
     display: flex;
@@ -4060,7 +4094,7 @@ footer .btn+.btn{
 
 @media screen and (min-width: 1440px){
     .joyful-customization-app .heading {
-        font-size: 80px;
+        font-size: 76px;
     }
 }
 
@@ -4196,13 +4230,14 @@ footer .btn+.btn{
 
 .app-features-section .content-layout {
     display: grid;
-    gap: var(--gutter);
+    /* gap: var(--gutter); */
     grid-template: auto/1fr;
 }
 
 @media (min-width: 768px){
     .app-features-section .content-layout {
         grid-template: auto/1fr 1fr;
+        gap: var(--gutter);
     }
 }
 
